@@ -31,3 +31,12 @@ register_new_players([H|T]):- register_player(H), register_new_players(T).
 register_new_players([]):-!.
 
 register_player(X) :- assert(player(X)).
+
+remove_all_brazilian_players:- 
+    findall(Player, team(Player, brasil), BrazilianPlayers),
+    remove_players_from_list(BrazilianPlayers).
+
+remove_players_from_list([H|T]):-
+    retract(player(H)),
+    remove_players_from_list(T).
+remove_players_from_list([]):- !.
