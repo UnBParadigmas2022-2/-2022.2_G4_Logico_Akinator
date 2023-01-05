@@ -1,43 +1,58 @@
-:- use_module(library(pce)).
 :- initialization(testeBase).
-:- use_module(library(random)).
+% :- use_module(library(random)).
 
-incr(X, X1):-
-    X1 is X+1.
+verifYes(X) :- (X = y; X = yes; X = s; X = sim).
+verifyNo(X) :- (X = n; X = no; X = nao).
 
-testeBase:-
-	consult('database/clubes.pl'),
-	consult('database/paises.pl'),
-	consult('database/jogadores.pl'),
-	write('Pense em um jogador e aperte s quando estiver pronto'), nl,
-	read(Resp),
-	Resp = s , menuTerminal(1, 1), !.
+incrementa(Atual, Proximo) :- Proximo is Atual + 1.
 
-menuTerminal(X, Y):-
-	pergunta(X,Y,Pergunta),
-	write(Pergunta),nl,
-	write('Digite s ou n'),
-	read(Resp),
-	monitoraResposta(X,Y,Resp), !.
+carregaArquivos :- consult('src/database/clubes.pl'),
+				   consult('src/database/paises.pl'),
+				   consult('src/database/jogadores.pl'),
+				   consult('src/database/perguntas.pl'),
+				   
+testeBase :-
+	carregaArquivos,
+	write('Pense em um jogador e aperte s quando estiver pronto'), 
+	nl,
+	read(Resposta),
+	verifYes(Resposta), 
+	menu(1, 1), 
+	!.
 
-menuTerminal(X,Y):-
-	not(pergunta(X,Y,Pergunta)),
-	write('O jogador não existe na base de dados'),nl,nl.
+menu(Nivel, NumeroPergunta):-
+	pergunta(Nivel, NumeroPergunta, Pergunta),
+	write(Pergunta), 
+	nl,
+	write('Resposta: '),
+	read(Resposta),
+	monitoraResposta(Nivel, NumeroPergunta, Resposta),
+	!.
 
-monitoraResposta(X, Y, Resp):-
-	Resp = s,
-	incr(X, X2),
-	pergunta(X, Y2, Pergunta),
-	menuTerminal(X, Y2), !. 
+menu(Nivel, NumeroPergunta):-
+	not(pergunta(Nivel, NumeroPergunta, Pergunta)),
+	write('O jogador não existe na base de dados'),
+	nl,
+	nl.
 
-monitoraResposta(X, Y, Resp):-
-	Resp = n,
-	incr(Y, Y2),
-	pergunta(X, Y2, Pergunta),
-	menuTerminal(X, Y2), !. 
+monitoraResposta(Nivel, NumeroPergunta, Pergunta):-
+	verifYes(Resposta),
+	incrementa(Nivel, Nivel2),
+	pergunta(Nivel2, NumeroPergunta, Pergunta),
+	menuTerminal(Nivel, NumeroPergunta), 
+	!. 
 
-monitoraResposta(X, Y, Resp):-
-	Resp = n,
-	incr(Y, Y2),
-	not(pergunta(X, Y2, Pergunta)),
-	write('O seu jogador nao existe na base de dados!'),nl, !. 	
+monitoraResposta(Nivel, NumeroPergunta, Pergunta):-
+	verifyNo(Resposta),
+	incrementa(NumeroPergunta, NumeroPergunta2),
+	pergunta(Nivel, NumeroPergunta2, Pergunta),
+	menuTerminal(Nivel, NumeroPergunta2), 
+	!. 
+
+monitoraResposta(Nivel, NumeroPergunta, Pergunta):-
+	verifyNo(Resposta),
+	incr(NumeroPergunta, NumeroPergunta2),
+	not(pergunta(Nivel, NumeroPergunta2, Pergunta)),
+	write('O seu jogador nao existe na base de dados!'),
+	nl, 
+	!. 	
