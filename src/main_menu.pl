@@ -1,5 +1,4 @@
 :- initialization(menu).
-:- use_module(library(pce_style_item)).
 :- use_module(library(pce)).
 
 menu:-  repeat,
