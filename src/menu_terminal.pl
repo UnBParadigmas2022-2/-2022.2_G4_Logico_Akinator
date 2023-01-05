@@ -1,85 +1,120 @@
-:- initialization(testeBase).
 :- use_module(library(lists)).
 :- use_module(library(random)).
 
-verifYes(X) :- (X = y; X = yes; X = s; X = sim).
-verifyNo(X) :- (X = n; X = no; X = nao).
+:- initialization(testeBase).
 
-incrementa(Atual, Proximo) :- Proximo is Atual + 1.
+:- dynamic pais/2.
+:- dynamic continente/1.
+:- dynamic jogador/7.
+
+verifYes(X) :- (X == y; X == yes; X == s; X == sim), !.
+verifyNo(X) :- (X == n; X == no; X == nao), !.
+
+incrementa(Atual, Proximo) :- Proximo is Atual + 1, !.
 
 carregaArquivos :- 
-	consult('src/database/clubes.pl'),
 	consult('src/database/paises.pl'),
+	consult('src/database/clubes.pl'),
 	consult('src/database/jogadores.pl'),
 	consult('src/database/perguntas.pl').
 
-pegaJogadoTipoPergunta(TipoDaPergunta, Jogador, Indicacao) :-
-    TipoDaPergunta = 'continente',
-	jogador(Jogador, Selecao, _, _, _, _, _),
-    pais(Indicacao, Selecao).
+pegaFatoDoJogador(Topico, Jogador, Indicador) :-
+	write("Entramos no fato do jogador - continente"), nl,
+    Topico == 'continente',
+	write("Selecionou continente"), nl,
+	jogador(Jogador, Selecao, _, _, _, _, _), %busca seleção do jogador
+	write("Encontrou Seleção "), write(Selecao), nl,
+    pais(Indicador, Selecao), %busca continente da seleção e coloca a seleção dentro de Indicador
+	write("Encontrou Continente "), write(Indicador), nl, !.
 
-pegaJogadoTipoPergunta(TipoDaPergunta, Jogador, Indicacao) :-
-    TipoDaPergunta = 'selecao',
-	jogador(Jogador, Indicacao, _, _, _, _, _).
+pegaFatoDoJogador(Topico, Jogador, Indicador) :-
+	write("Entramos no fato do jogador - selecao"), nl,
+	write(Topico),
+    Topico == 'selecao',
+	write("Selecionou selecao"), nl,
+	Indicador is null,
+	jogador(Jogador, Indicador, _, _, _, _, _), !.
 
-shuffleTipo(TipoDaPergunta) :-
-	findall(Choice, pergunta(Choice, _, _), ListaDeTipos),
-	random_member(TipoDaPergunta, ListaDeTipos).
+shuffleTopico(Topico) :-
+	findall(Choice, pergunta(Choice, _, _), ListaDeTopicos),
+	write("Tipo de perguntas "), write(ListaDeTopicos), write(Topico), nl,
+	random_member(Topico, ListaDeTopicos),
+	write(Topico), nl, !.
 
 shuffleJogador(Jogador) :-
 	findall(Choice, jogador(Choice, _, _, _, _, _, _), ListaDeJogadores),
-	random_member(Jogador, ListaDeJogadores).
+	write(ListaDeJogadores),
+	nl,
+	nl,
+	random_member(Jogador, ListaDeJogadores), !.
 				   
 testeBase :-
+	% Carrega os arquivos da base, randomiza o tipo de pergunta e o jogador, por fim chama o "menu"
 	carregaArquivos,
-	shuffleTipo(TipoDaPergunta),
-	write(TipoDaPergunta),
-    shuffleJogador(Jogador),
-	pegaJogadoTipoPergunta(TipoDaPergunta, Jogador, Indicacao),
-	pegaPergunta(TipoDaPergunta, Prefix, Sufix),
-	write(Prefix),
-	write(Indicacao),
-	write(Sufix),
-	% write('Pense em um jogador e aperte s quando estiver pronto'), 
-	% nl,
-	% read(Resposta),
-	% verifYes(Resposta), 
-	% menu(1, 1), 
-	!.
-
-menu(Nivel, NumeroPergunta):-
-	pergunta(Nivel, NumeroPergunta, Pergunta),
-	write(Pergunta), 
+	write('Pense em um jogador e aperte s quando estiver pronto'), 
 	nl,
-	write('Resposta: '),
 	read(Resposta),
-	monitoraResposta(Nivel, NumeroPergunta, Resposta),
+	verifYes(Resposta), 
+	shuffleTopico(Topico),
+	shuffleJogador(Jogador),
+	menu(Topico, Jogador), 
 	!.
 
-menu(Nivel, NumeroPergunta):-
-	not(pergunta(Nivel, NumeroPergunta, Pergunta)),
-	write('O jogador não existe na base de dados'),
+menu(Topico, Jogador) :-
+	% Busca o "Topico" da pergunta para então recuperar a pergunta
+	write("Entramos no menu"), nl,
+	write(Topico), write(Jogador), nl,
+	pegaFatoDoJogador(Topico, Jogador, FatoDoJogador),
+	write("Pegamos o fato do jogador"), nl,
+	pegaPergunta(Topico, Prefix, Sufix),
+	write("Pegamos a pergunta"), nl,
+	escrevePergunta(Prefix, FatoDoJogador, Sufix),
 	nl,
-	nl.
+	obtemResposta(Resposta),
+	monitoraResposta(Topico, FatoDoJogador, Resposta),
+	!.
 
-monitoraResposta(Nivel, NumeroPergunta, Resposta):-
+escrevePergunta(Prefix, FatoDoJogador, Sufix) :-
+	% Função exclusiva para escrita da pergunta
+	write(Prefix), % Escreve
+	write(FatoDoJogador),
+	write(Sufix), !.
+
+obtemResposta(Resposta) :-
+	write('Resposta: '),
+	read(Resposta), !.
+
+limpaTodosJogadores(X):- 
+    limpaBase(X),
+    fail, !.
+limpaTodosJogadores(X).
+
+limpaBase(X):- 
+    retract(jogador(X, _, _, _, _, _, _)), !.
+limpaBase(X).
+
+atualizaJogadores(Topico, FatoDoJogador) :-
+	findall(Choice, jogador(Choice, FatoDoJogador, _, _, _, _, _), ListaDeJogadores),
+	write(ListaDeJogadores),
+	limpaTodosJogadores(X), !.
+
+monitoraResposta(Topico, FatoDoJogador, Resposta):-
 	verifYes(Resposta),
-	incrementa(Nivel, Nivel2),
-	pergunta(Nivel2, NumeroPergunta, Pergunta),
-	menu(Nivel, NumeroPergunta), 
+	write("Entramos no monitora - sim"), nl,
+	% incrementa(Nivel, Nivel2),
+	% pergunta(Nivel2, NumeroPergunta, Pergunta),
+	% menu(Nivel, NumeroPergunta), 
 	!. 
 
-monitoraResposta(Nivel, NumeroPergunta, Resposta):-
+monitoraResposta(Topico, FatoDoJogador, Resposta) :-
 	verifyNo(Resposta),
-	incrementa(NumeroPergunta, NumeroPergunta2),
-	pergunta(Nivel, NumeroPergunta2, Pergunta),
-	menu(Nivel, NumeroPergunta2), 
+	write("Entramos no monitora - não"), nl,
+	limpa(Topico, FatoDoJogador),
+	write("Limpou"), nl,
+	write(Topico), write(FatoDoJogador), nl, 
+	shuffleTopico(Topico),
+	write("Shuffle tipo funcionou"), nl,
+    shuffleJogador(Jogador),
+	write("Shuffle jogador funcionou"), nl,
+	menu(Topico, Jogador), 
 	!. 
-
-monitoraResposta(Nivel, NumeroPergunta, Resposta):-
-	verifyNo(Resposta),
-	incrementa(NumeroPergunta, NumeroPergunta2),
-	not(pergunta(Nivel, NumeroPergunta2, Pergunta)),
-	write('O seu jogador nao existe na base de dados!'),
-	nl, 
-	!. 	

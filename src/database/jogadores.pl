@@ -1,3 +1,8 @@
+limpaJogadores([H|T]) :-
+	retract(jogador(H, _, _, _, _, _, _)),
+	limpaJogadores(T), !.
+limpaJogadores([]) :- !.
+
 %% Fatos: 
 
 %% jogador(Nome, Selecao, Posicao, Time, Idade, Gols na Copa, Assistencias na Copa.)
