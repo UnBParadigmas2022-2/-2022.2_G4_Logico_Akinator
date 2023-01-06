@@ -4,7 +4,8 @@
     print_about/0,
     print_exit/0,
     print_unknown/0,
-    print_fail/0
+    print_fail/0,
+    print_success/1
     ]).
 
 print_header:-

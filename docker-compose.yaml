@@ -16,4 +16,4 @@ services:
       - 8081:81
     volumes:
       - ./:/src
-    command: ls
+    command: swipl ./v2/app.pl
