@@ -56,26 +56,31 @@ TEMPO: +/- 15min
 
 | Nome do Membro                      | Contribuição | Significância da Contribuição para o Projeto |
 | ----------------------------------- | ------------ | -------------------------------------------- |
-| Amanda Jeniffer Pereira Nobre       | -            | Boa                                          |
-| Ana Carolina Rodrigues Leite        | -            | Boa                                          |
-| Daniel Barcelos Moreira             | -            | Boa                                          |
-| Enzo Gabriel Guedes Queiroz Saraiva | -            | Boa                                          |
-| Hugo Sobral de Lima Salomão         | -            | Excelente                                    |
-| Leonardo da Silva Gomes             | -            | Excelente                                    |
-| Micaella Lorraine Gouveia de Lima   | -            | Excelente                                    |
+| Amanda Jeniffer Pereira Nobre       | População do banco de dados, criação das perguntas | Boa |
+| Ana Carolina Rodrigues Leite        | População do banco de dados, criação das perguntas | Boa |
+| Daniel Barcelos Moreira             | População do banco de dados, criação das perguntas | Boa |
+| Enzo Gabriel Guedes Queiroz Saraiva | Definição de uma estrutura inicial do projeto, criação do menu | Boa | 
+| Hugo Sobral de Lima Salomão         | Desenvolvimento das versões 1 e 2, como foco na segunda, desenvolvimento da lógica de randomização, perguntas e tratamento com as respostas          | Excelente                                    |
+| Leonardo da Silva Gomes             | Desenvolvimento das versões 1 e 2, com foco na primeira, desenvolvimento da lógica de randomização, perguntas e tratamento com as respostas           | Excelente                                    |
+| Micaella Lorraine Gouveia de Lima   | Desenvolvimento das versões 1 e 2, com foco na primeira, desenvolvimento da lógica das perguntas e tratamento com as respostas, população do banco de dados         | Excelente                                    |
 
 (Excelente/Boa/Regular/Ruim/Nula)
 
 ## Outros 
 
 ### Lições Aprendidas
--
+- Uso da linguagem prolog
+- Entendimento do paradigma funcional
+- Manipulação de base de dados em memória
 
 ### Percepções
--
+- O grupo conseguiu entender a diferença entre o Paradigma Funcional para o Lógico a partir do momento em que nos vimos aplicando a maioria das funções de forma recursiva, que é mais utilizado no paradigma funcional.
+- Tivemos então que adaptar o código ao pensamento lógico.
 
 ### Contribuições e Fragilidades
-- 
+- O grupo teve dificuldade de inicializar o projeto. Alguns membros se dedicaram para o estudo da linguagem, e com o recesso, não foi possível fazer reuniões com todo o grupo, já que alguns membros estavam viajando.
+- Foram pensadas dois tipos de soluções, e com a falta de tempo de desenvolvimento, o time de dividiu em dois grupos para a implementação das duas ideias.
+- Os membros que consesguiram entender melhor a linguagem ficaram mais ativos e responsáveis pela lógica do jogo, como as perguntas seriam feitas, como elas estariam atreladas aos jogadores.
 
 ### Trabalhos Futuros
 -
