@@ -1,3 +1,5 @@
+:- use_module([bc_atualizacoes]).
+
 lidar_pergunta(goleiro) :-
     write("Seu jogador é goleiro? "),
     read(Ans),

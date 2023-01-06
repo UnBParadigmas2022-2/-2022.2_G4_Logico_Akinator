@@ -1,3 +1,8 @@
+:- module(bc_manipulacoes, [
+    exclui_jogadores_da_lista/1,
+    exclui_jogadores_fora_da_lista/1]).
+:- use_module([define_jogadores]).
+
 % ---------- Lida com respostas negativas ---------- %
 exclui_jogadores_da_lista(ListaDeJogadores) :-
     findall(Jogador, jogador(Jogador, _, _, _, _, _, _), TodosJogadores),

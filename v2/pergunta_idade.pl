@@ -1,3 +1,5 @@
+:- use_module([bc_atualizacoes]).
+
 lidar_pergunta(idade18) :-
     write("Seu jogador possui 18 anos? "),
     read(Ans),
