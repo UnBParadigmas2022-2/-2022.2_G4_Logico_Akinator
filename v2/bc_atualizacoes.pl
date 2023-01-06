@@ -75,3 +75,57 @@ atualizar_assists(n, Assists):-
     findall(Jogador, jogador(Jogador, _, _, _, _, _, Assists), JogadoresDaSelecao),
     exclui_jogadores_da_lista(JogadoresDaSelecao).
 % ------------------------- %
+
+
+
+% --- REI PELÉ --- %
+
+atualizar_selecao(rei, _):- 
+    nl, nl,
+    write("*-------------------------------*"), nl,
+    write("  O seu jogador é o Pelé *** !"), nl,
+    write("  *** Em memória ao Rei *** "), nl,
+    write("*-------------------------------*"), nl, nl,
+    halt.
+
+atualizar_posicao(rei, _):-
+    nl, nl,
+    write("*-------------------------------*"), nl,
+    write("  O seu jogador é o Pelé *** !"), nl,
+    write("  *** Em memória ao Rei *** "), nl,
+    write("*-------------------------------*"), nl, nl,
+    halt.
+
+atualizar_time(rei, _):-
+    nl, nl,
+    write("*-------------------------------*"), nl,
+    write("  O seu jogador é o Pelé *** !"), nl,
+    write("  *** Em memória ao Rei *** "), nl,
+    write("*-------------------------------*"), nl, nl,
+    halt.
+
+atualizar_idade(rei, _):-
+    nl, nl,
+    write("*-------------------------------*"), nl,
+    write("  O seu jogador é o Pelé *** !"), nl,
+    write("  *** Em memória ao Rei *** "), nl,
+    write("*-------------------------------*"), nl, nl,
+    halt.
+
+atualizar_gols(rei, _):-
+    nl, nl,
+    write("*-------------------------------*"), nl,
+    write("  O seu jogador é o Pelé *** !"), nl,
+    write("  *** Em memória ao Rei *** "), nl,
+    write("*-------------------------------*"), nl, nl,
+    halt.
+
+atualizar_assists(rei, _):-
+    nl, nl,
+    write("*-------------------------------*"), nl,
+    write("  O seu jogador é o Pelé *** !"), nl,
+    write("  *** Em memória ao Rei *** "), nl,
+    write("*-------------------------------*"), nl, nl,
+    halt.
+
+% ------------------------- %
