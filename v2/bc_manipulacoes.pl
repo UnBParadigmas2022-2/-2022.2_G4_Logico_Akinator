@@ -1,5 +1,3 @@
-:- module(manipulacoes).
-
 % ---------- Lida com respostas negativas ---------- %
 exclui_jogadores_da_lista(ListaDeJogadores) :-
     findall(Jogador, jogador(Jogador, _, _, _, _, _, _), TodosJogadores),

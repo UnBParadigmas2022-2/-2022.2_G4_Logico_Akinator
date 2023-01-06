@@ -1,4 +1,5 @@
-:- module(atualizacoes).
+:- module(bc_atualizacoes, [atualizar_selecao/2, atualizar_posicao/2, atualizar_time/2, atualizar_idade/2, atualizar_gols/2, atualizar_gols/2]).
+:- use_module([define_jogadores]).
 
 % --- Atualizar Selecao --- %
 atualizar_selecao(s, Selecao):- 

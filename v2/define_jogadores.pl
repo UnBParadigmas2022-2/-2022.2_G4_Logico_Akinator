@@ -1,3 +1,5 @@
+:- module(define_jogadores, [jogador/7]).
+:- dynamic jogador/7.
 %% Fatos: 
 
 %% Jogador(Nome, Seleção, Posição, Clube, Idade, Gols na Copa, Assistências na Copa).
@@ -48,7 +50,7 @@ jogador('Marquinhos',  brasil, defensor, psg,                idade28, gol0, assi
 jogador('ThiagoSilva', brasil, defensor, chelsea,            idade38, gol0, assist0).
 jogador('Alex',        brasil, defensor, juventus,           idade31, gol0, assist0).
 jogador('Casemiro',    brasil, meia,     manchesterUnited,   idade30, gol1, assist1).
-jogador('Paqueta',     brasil, meia,     westHam,inglaterra, idade25, gol1, assist1).
+jogador('Paqueta',     brasil, meia,     westHam,            idade25, gol1, assist1).
 jogador('Neymar',      brasil, atacante, psg,                idade30, gol2, assist1).
 jogador('Raphinha',    brasil, atacante, barcelona,          idade26, gol0, assist0).
 jogador('ViniciusJR',  brasil, atacante, realMadrid,         idade22, gol1, assist2).
