@@ -6,7 +6,6 @@
 :- initialization(app).
 
 app :-
-    cadastraPerguntas,
     print_header,
     print_menu,
     trata_resposta.
@@ -17,7 +16,7 @@ trata_resposta :-
     read(Ans),
     trata_resposta(Ans).
 
-trata_resposta(1) :- fluxo_do_jogo.
+trata_resposta(1) :- inicia_rodada.
 
 trata_resposta(2) :- 
     print_about,
@@ -30,14 +29,28 @@ trata_resposta(3) :- print_exit.
 trata_resposta(X) :- print_unknown, print_exit.
 
 
-verifica_vitoria(0):- print_fail.
+verifica_vitoria(0):- print_fail, play_again.
 
 verifica_vitoria(1):- 
     jogador(Nome, _, _, _, _, _, _),
-    print_success(Nome).
-    
+    print_success(Nome),
+    play_again.
+
 verifica_vitoria(X):- !.
 
+play_again:-
+    print_play_again,
+    read(Ans),
+    play_again(Ans).
+play_again(1) :- inicia_rodada.
+play_again(2) :- print_exit.
+
+inicia_rodada:- 
+    limpa_jogadores(X),
+    limpa_perguntas(X),
+    consult('define_jogadores.pl'),
+    cadastraPerguntas,
+    fluxo_do_jogo.
 
 fluxo_do_jogo :-
     findall(X, jogador(X, _, _, _, _, _, _), Jogadores),

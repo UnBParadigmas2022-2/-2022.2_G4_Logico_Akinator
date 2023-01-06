@@ -11,7 +11,7 @@
 
 %% Jogador(Nome, Seleção, Posição, Clube, Idade, Gols na Copa, Assistências na Copa).
 exclui_perguntas_assist:-
-    findall(Assist, jogador(_, _, _, _, _, _, Assist), Assist),
+    findall(Assist, jogador(_, _, _, _, _, _, Assist), Assistencias),
     exclui_perguntas_da_lista(Assistencias), !.
 
 exclui_perguntas_gol:-

@@ -1,6 +1,10 @@
-:- module(define_jogadores, [jogador/7]).
+:- module(define_jogadores, [jogador/7, limpa_jogadores/1]).
 :- dynamic jogador/7.
 %% Fatos: 
+limpa_jogadores(X) :- limpa_jogadores1(X), fail.
+limpa_jogadores(X).
+limpa_jogadores1(X) :- retract(jogador(_, _, _, _, _, _, _)).
+limpa_jogadores1(X).
 
 %% Jogador(Nome, Seleção, Posição, Clube, Idade, Gols na Copa, Assistências na Copa).
 

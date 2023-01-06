@@ -5,7 +5,8 @@
     print_exit/0,
     print_unknown/0,
     print_fail/0,
-    print_success/1
+    print_success/1,
+    print_play_again/0
     ]).
 
 print_header:-
@@ -49,10 +50,17 @@ print_unknown:-
 print_fail:-
     nl,
     write("Infelizmente não conseguimos identificar o seu jogador!"), nl,
-    write("Parabéns por ganhar de nós!"), nl,
-    halt.
+    write("Parabéns por ganhar de nós!"), nl.
 
 print_success(Nome):-
+    nl, nl,
+    write("*-------------------------------*"), nl,
+    write("  O seu jogador é o "), write(Nome), nl,
+    write("*-------------------------------*"), nl, nl.
+
+print_play_again:- 
     nl,
-    write("O seu jogador é o "), write(Nome), nl,
-    halt.
+    write("Você gostaria de jogar outra rodada? "), nl,
+    write("1) Sim"), nl,
+    write("2) Não"), nl,
+    write("Escolha sua opção: ").

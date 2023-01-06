@@ -1,5 +1,10 @@
-:- module(perguntas, [lidar_pergunta/1]).
+:- module(perguntas, [lidar_pergunta/1, limpa_perguntas/1]).
 :- use_module([bc_atualizacoes]).
+
+limpa_perguntas(X) :- limpa_perguntas1(X), fail.
+limpa_perguntas(X).
+limpa_perguntas1(X) :- retract(pergunta(_, _)).
+limpa_perguntas1(X).
 
 % ---- Assistências ---- %
 %% Jogador(Nome, Seleção, Posição, Clube, Idade, Gols na Copa, Assistências na Copa).
