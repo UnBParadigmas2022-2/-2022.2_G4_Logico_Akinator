@@ -3,6 +3,9 @@
     exclui_jogadores_fora_da_lista/1]).
 :- use_module([define_jogadores]).
 
+:-style_check(-discontiguous).
+:-style_check(-singleton).
+
 % ---------- Lida com respostas negativas ---------- %
 exclui_jogadores_da_lista(ListaDeJogadores) :-
     findall(Jogador, jogador(Jogador, _, _, _, _, _, _), TodosJogadores),

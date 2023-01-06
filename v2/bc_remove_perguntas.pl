@@ -9,6 +9,9 @@
 :- use_module([define_jogadores]).
 :- use_module([define_perguntas]).
 
+:-style_check(-discontiguous).
+:-style_check(-singleton).
+
 %% Jogador(Nome, Seleção, Posição, Clube, Idade, Gols na Copa, Assistências na Copa).
 exclui_perguntas_assist:-
     findall(Assist, jogador(_, _, _, _, _, _, Assist), Assistencias),

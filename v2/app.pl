@@ -3,6 +3,9 @@
 :- use_module([define_perguntas]).
 :- use_module([perguntas]).
 
+:-style_check(-discontiguous).
+:-style_check(-singleton).
+
 :- initialization(app).
 
 app :-

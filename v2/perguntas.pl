@@ -1,6 +1,9 @@
 :- module(perguntas, [lidar_pergunta/1, limpa_perguntas/1]).
 :- use_module([bc_atualizacoes]).
 
+:-style_check(-discontiguous).
+:-style_check(-singleton).
+
 limpa_perguntas(X) :- limpa_perguntas1(X), fail.
 limpa_perguntas(X).
 limpa_perguntas1(X) :- retract(pergunta(_, _)).
@@ -261,7 +264,7 @@ lidar_pergunta(polonia) :-
     atualizar_selecao(Ans, polonia).
 
 lidar_pergunta(franca) :- 
-    write("Seu jogador é frances? "),
+    write("Seu jogador é francês? "),
     read(Ans),
     atualizar_selecao(Ans, franca).
 
@@ -336,7 +339,7 @@ lidar_pergunta(camaroes) :-
     atualizar_selecao(Ans, camaroes).
 
 lidar_pergunta(portugal) :- 
-    write("Seu jogador é portuguÊs? "),
+    write("Seu jogador é português? "),
     read(Ans),
     atualizar_selecao(Ans, portugal).
 
@@ -628,7 +631,7 @@ lidar_pergunta(fcDallas) :-
     atualizar_time(Ans, fcDallas).
 
 lidar_pergunta(lafc) :-
-    write("Seu jogador joga no time LAFC? "),
+    write("Seu jogador joga no time Los Angeles FC? "),
     read(Ans),
     atualizar_time(Ans, lafc).
 
@@ -638,7 +641,7 @@ lidar_pergunta(nashvilleSC) :-
     atualizar_time(Ans, nashvilleSC).
 
 lidar_pergunta(saltLake) :-
-    write("Seu jogador joga no time SaltLake? "),
+    write("Seu jogador joga no time Salt Lake? "),
     read(Ans),
     atualizar_time(Ans, saltLake).
 
@@ -668,7 +671,7 @@ lidar_pergunta(monaco) :-
     atualizar_time(Ans, monaco).
 
 lidar_pergunta(psg) :-
-    write("Seu jogador joga no time PSG? "),
+    write("Seu jogador joga no time Paris Saint Germain? "),
     read(Ans),
     atualizar_time(Ans, psg).
 
@@ -698,7 +701,7 @@ lidar_pergunta(heerenveen) :-
     atualizar_time(Ans, heerenveen).
 
 lidar_pergunta(psv) :-
-    write("Seu jogador joga no time PSV? "),
+    write("Seu jogador joga no time PSV Eindhoven? "),
     read(Ans),
     atualizar_time(Ans, psv).
 
