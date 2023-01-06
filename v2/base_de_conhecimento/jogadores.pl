@@ -43,7 +43,7 @@ jogador('Meunier',belgica,defensor,borussiaDortmund,31,0,0).
 jogador('Castagne',belgica,defensor,leicester,34,0,0).
 jogador('Tielemans',belgica,meia,leicester,24,0,0).
 jogador('Witsel',belgica,meia,atleticoDeMadrid,20,0,0).
-jogador('DeBruyne',belgica,meia,manchesterCity,18,0,0).
+jogador('DeBruyne',belgica,meia,manchesterCity,31,0,0).
 jogador('Hazard',belgica,atacante,realMadrid,31,0,0).
 jogador('Trossard',belgica,atacante,brighton,28,0,0).
 jogador('Lukaku',belgica,atacante,inter,29,0,0).
