@@ -2,6 +2,7 @@
 :- use_module([bc_atualizacoes]).
 
 % ---- Assistências ---- %
+%% Jogador(Nome, Seleção, Posição, Clube, Idade, Gols na Copa, Assistências na Copa).
 lidar_pergunta(assist0) :-
     write("Seu jogador fez 0 assistências na copa do mundo? "),
     read(Ans),
