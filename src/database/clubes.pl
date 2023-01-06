@@ -125,8 +125,8 @@ paisClube(salernitana, italia).
 paisClube(sampdoria, italia).
 paisClube(torino, italia).
 
-paisClube(shimizuSPulse,japao)
-paisClube(tokyo,japao)
+paisClube(shimizuSPulse,japao).
+paisClube(tokyo,japao).
 
 paisClube(wydad,marrocos).
 

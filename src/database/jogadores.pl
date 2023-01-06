@@ -749,10 +749,10 @@ idade('CristianoRonaldo', 37).
 golsCopa('CristianoRonaldo', 1).
 assistenciaCopa('CristianoRonaldo', 0).
 
+
 %% Selecao Japonesa
 
 
-jogador('Gonda').
 selecao('Gonda', japao).
 posicao('Gonda', goleiro).
 clube('Gonda', shimizuSPulse).
@@ -760,7 +760,6 @@ idade('Gonda', 33).
 golsCopa('Gonda', 0).
 assistenciaCopa('Gonda', 0).
 
-jogador('Nagatomo').
 selecao('Nagatomo', japao).
 posicao('Nagatomo', defensor).
 clube('Nagatomo', tokyo).
@@ -768,7 +767,6 @@ idade('Nagatomo', 36).
 golsCopa('Nagatomo', 0).
 assistenciaCopa('Nagatomo', 0).
 
-jogador('Yoshida').
 selecao('Yoshida', japao).
 posicao('Yoshida', defensor).
 clube('Yoshida', schalke).
@@ -776,7 +774,6 @@ idade('Yoshida', 34).
 golsCopa('Yoshida', 0).
 assistenciaCopa('Yoshida', 1).
 
-jogador('Itakura').
 selecao('Itakura', japao).
 posicao('Itakura', defensor).
 clube('Itakura', gladbach).
@@ -784,7 +781,6 @@ idade('Itakura', 25).
 golsCopa('Itakura', 0).
 assistenciaCopa('Itakura', 1).
 
-jogador('Tomiyasu').
 selecao('Tomiyasu', japao).
 posicao('Tomiyasu', defensor).
 clube('Tomiyasu', arsenal).
@@ -792,7 +788,6 @@ idade('Tomiyasu', 24).
 golsCopa('Tomiyasu', 0).
 assistenciaCopa('Tomiyasu', 0).
 
-jogador('Endo').
 selecao('Endo', japao).
 posicao('Endo', meia).
 clube('Endo', stuttgart).
@@ -800,7 +795,6 @@ idade('Endo', 29).
 golsCopa('Endo', 0).
 assistenciaCopa('Endo', 0).
 
-jogador('Mitoma').
 selecao('Mitoma', japao).
 posicao('Mitoma', meia).
 clube('Mitoma', brighton).
@@ -808,7 +802,6 @@ idade('Mitoma', 25).
 golsCopa('Mitoma', 0).
 assistenciaCopa('Mitoma', 1).
 
-jogador('Kamada').
 selecao('Kamada', japao).
 posicao('Kamada', meia).
 clube('Kamada', frankfurt).
@@ -816,7 +809,6 @@ idade('Kamada', 25).
 golsCopa('Kamada', 0).
 assistenciaCopa('Kamada', 0).
 
-jogador('Doan').
 selecao('Doan', japao).
 posicao('Doan', atacante).
 clube('Doan', freiburg).
@@ -824,7 +816,6 @@ idade('Doan', 24).
 golsCopa('Doan', 2).
 assistenciaCopa('Doan', 0).
 
-jogador('JunyaIto').
 selecao('JunyaIto', japao).
 posicao('JunyaIto', atacante).
 clube('JunyaIto', reims).
@@ -832,7 +823,6 @@ idade('JunyaIto', 29).
 golsCopa('JunyaIto', 0).
 assistenciaCopa('JunyaIto', 1).
 
-jogador('Asano').
 selecao('Asano', japao).
 posicao('Asano', atacante).
 clube('Asano', bochum).
@@ -840,10 +830,9 @@ idade('Asano', 28).
 golsCopa('Asano', 1).
 assistenciaCopa('Asano', 0).
 
+
 %% Selecao Alema
 
-
-jogador('Neuer').
 selecao('Neuer', alemanha).
 posicao('Neuer', goleiro).
 clube('Neuer', bayern).
@@ -851,7 +840,6 @@ idade('Neuer', 36).
 golsCopa('Neuer', 0).
 assistenciaCopa('Neuer', 0).
 
-jogador('Rüdiger').
 selecao('Rüdiger', alemanha).
 posicao('Rüdiger', defensor).
 clube('Rüdiger', realMadrid).
@@ -859,7 +847,6 @@ idade('Rüdiger', 29).
 golsCopa('Rüdiger', 0).
 assistenciaCopa('Rüdiger', 0).
 
-jogador('Raum').
 selecao('Raum', alemanha).
 posicao('Raum', defensor).
 clube('Raum', leipzig).
@@ -867,7 +854,6 @@ idade('Raum', 24).
 golsCopa('Raum', 0).
 assistenciaCopa('Raum', 1).
 
-jogador('Süle').
 selecao('Süle', alemanha).
 posicao('Süle', defensor).
 clube('Süle', borussiaDortmund).
@@ -875,7 +861,6 @@ idade('Süle', 27).
 golsCopa('Süle', 0).
 assistenciaCopa('Süle', 0).
 
-jogador('Kimmich').
 selecao('Kimmich', alemanha).
 posicao('Kimmich', meia).
 clube('Kimmich', bayern).
@@ -883,7 +868,6 @@ idade('Kimmich', 27).
 golsCopa('Kimmich', 0).
 assistenciaCopa('Kimmich', 1).
 
-jogador('Havertz').
 selecao('Havertz', alemanha).
 posicao('Havertz', meia).
 clube('Havertz', chelsea).
@@ -891,7 +875,6 @@ idade('Havertz', 23).
 golsCopa('Havertz', 2).
 assistenciaCopa('Havertz', 0).
 
-jogador('Füllkrug').
 selecao('Füllkrug', alemanha).
 posicao('Füllkrug', atacante).
 clube('Füllkrug', werderBremen).
@@ -899,7 +882,6 @@ idade('Füllkrug', 29).
 golsCopa('Füllkrug', 2).
 assistenciaCopa('Füllkrug', 1).
 
-jogador('Gnabry').
 selecao('Gnabry', alemanha).
 posicao('Gnabry', atacante).
 clube('Gnabry', bayern).
@@ -907,7 +889,6 @@ idade('Gnabry', 27).
 golsCopa('Gnabry', 1).
 assistenciaCopa('Gnabry', 2).
 
-jogador('Müller').
 selecao('Müller', alemanha).
 posicao('Müller', atacante).
 clube('Müller', bayern).
@@ -915,7 +896,6 @@ idade('Müller', 33).
 golsCopa('Müller', 0).
 assistenciaCopa('Müller', 0).
 
-jogador('Musiala').
 selecao('Musiala', alemanha).
 posicao('Musiala', atacante).
 clube('Musiala', bayern).
@@ -923,13 +903,13 @@ idade('Musiala', 19).
 golsCopa('Musiala', 0).
 assistenciaCopa('Musiala', 1).
 
-jogador('Sané').
 selecao('Sané', alemanha).
 posicao('Sané', atacante).
 clube('Sané', bayern).
 idade('Sané', 26).
 golsCopa('Sané', 0).
 assistenciaCopa('Sané', 1).
+
 
 %% Selecao Costarriquenha
 
@@ -1023,18 +1003,17 @@ golsCopa('Bennette', 0).
 assistenciaCopa('Bennette', 0).
 
 
+
 %% Selecao Croata
 
 
-jogador('Livakovic').
-selecao('Livakovic', croacia).
-posicao('Livakovic', goleiro).
+selecao('Livakovic', goleiro).
+posicao('Livakovic', defensor).
 clube('Livakovic', dZagreb).
-idade('Livakovic', 27).
+idade('Livakovic', 37).
 golsCopa('Livakovic', 0).
 assistenciaCopa('Livakovic', 0).
 
-jogador('Lovren').
 selecao('Lovren', croacia).
 posicao('Lovren', defensor).
 clube('Lovren', lyon).
@@ -1042,7 +1021,6 @@ idade('Lovren', 33).
 golsCopa('Lovren', 0).
 assistenciaCopa('Lovren', 1).
 
-jogador('Sosa').
 selecao('Sosa', croacia).
 posicao('Sosa', defensor).
 clube('Sosa', stuttgart).
@@ -1050,7 +1028,6 @@ idade('Sosa', 24).
 golsCopa('Sosa', 0).
 assistenciaCopa('Sosa', 0).
 
-jogador('Gvardiol').
 selecao('Gvardiol', croacia).
 posicao('Gvardiol', defensor).
 clube('Gvardiol', leipzig).
@@ -1058,7 +1035,6 @@ idade('Gvardiol', 20).
 golsCopa('Gvardiol', 1).
 assistenciaCopa('Gvardiol', 0).
 
-jogador('Juranovic').
 selecao('Juranovic', croacia).
 posicao('Juranovic', defensor).
 clube('Juranovic', celtic).
@@ -1066,7 +1042,6 @@ idade('Juranovic', 27).
 golsCopa('Juranovic', 0).
 assistenciaCopa('Juranovic', 1).
 
-jogador('Perisic').
 selecao('Perisic', croacia).
 posicao('Perisic', meia).
 clube('Perisic', tottenham).
@@ -1074,7 +1049,6 @@ idade('Perisic', 33).
 golsCopa('Perisic', 1).
 assistenciaCopa('Perisic', 3).
 
-jogador('Kovacic').
 selecao('Kovacic', croacia).
 posicao('Kovacic', meia).
 clube('Kovacic', chelsea).
@@ -1082,7 +1056,6 @@ idade('Kovacic', 28).
 golsCopa('Kovacic', 0).
 assistenciaCopa('Kovacic', 0).
 
-jogador('Modric').
 selecao('Modric', croacia).
 posicao('Modric', meia).
 clube('Modric', realMadrid).
@@ -1090,7 +1063,6 @@ idade('Modric', 37).
 golsCopa('Modric', 0).
 assistenciaCopa('Modric', 0).
 
-jogador('Livaja').
 selecao('Livaja', croacia).
 posicao('Livaja', atacante).
 clube('Livaja', hajdukSplit).
@@ -1098,7 +1070,6 @@ idade('Livaja', 29).
 golsCopa('Livaja', 1).
 assistenciaCopa('Livaja', 1).
 
-jogador('Petkovic').
 selecao('Petkovic', croacia).
 posicao('Petkovic', atacante).
 clube('Petkovic', dZagreb).
@@ -1106,7 +1077,6 @@ idade('Petkovic', 28).
 golsCopa('Petkovic', 1).
 assistenciaCopa('Petkovic', 0).
 
-jogador('Orsic').
 selecao('Orsic', croacia).
 posicao('Orsic', atacante).
 clube('Orsic', dZagreb).
@@ -1114,10 +1084,10 @@ idade('Orsic', 30).
 golsCopa('Orsic', 1).
 assistenciaCopa('Orsic', 2).
 
+
 %% Selecao Canadense
 
 
-jogador('Borjan').
 selecao('Borjan', canada).
 posicao('Borjan', goleiro).
 clube('Borjan', redStar).
@@ -1125,7 +1095,6 @@ idade('Borjan', 35).
 golsCopa('Borjan', 0).
 assistenciaCopa('Borjan', 0).
 
-jogador('Johnston').
 selecao('Johnston', canada).
 posicao('Johnston', defensor).
 clube('Johnston', celtic).
@@ -1133,7 +1102,6 @@ idade('Johnston', 24).
 golsCopa('Johnston', 0).
 assistenciaCopa('Johnston', 0).
 
-jogador('Adekugbe').
 selecao('Adekugbe', canada).
 posicao('Adekugbe', defensor).
 clube('Adekugbe', hataysport).
@@ -1141,15 +1109,13 @@ idade('Adekugbe', 27).
 golsCopa('Adekugbe', 0).
 assistenciaCopa('Adekugbe', 0).
 
-jogador('Miller').
 selecao('Miller', canada).
 posicao('Miller', defensor).
 clube('Miller', montreal).
-idade('Miller', 25).
+idade('Miller', 2h).
 golsCopa('Miller', 0).
 assistenciaCopa('Miller', 0).
 
-jogador('Vitória').
 selecao('Vitória', canada).
 posicao('Vitória', defensor).
 clube('Vitória', chaves).
@@ -1157,7 +1123,6 @@ idade('Vitória', 35).
 golsCopa('Vitória', 0).
 assistenciaCopa('Vitória', 0).
 
-jogador('Davies').
 selecao('Davies', canada).
 posicao('Davies', defensor).
 clube('Davies', bayern).
@@ -1165,7 +1130,6 @@ idade('Davies', 22).
 golsCopa('Davies', 1).
 assistenciaCopa('Davies', 0).
 
-jogador('Laryea').
 selecao('Laryea', canada).
 posicao('Laryea', defensor).
 clube('Laryea', toronto).
@@ -1173,7 +1137,6 @@ idade('Laryea', 27).
 golsCopa('Laryea', 0).
 assistenciaCopa('Laryea', 0).
 
-jogador('Hoilett').
 selecao('Hoilett', canada).
 posicao('Hoilett', meia).
 clube('Hoilett', reading).
@@ -1181,7 +1144,6 @@ idade('Hoilett', 32).
 golsCopa('Hoilett', 0).
 assistenciaCopa('Hoilett', 0).
 
-jogador('Hutchinson').
 selecao('Hutchinson', canada).
 posicao('Hutchinson', meia).
 clube('Hutchinson', besiktas).
@@ -1189,7 +1151,6 @@ idade('Hutchinson', 39).
 golsCopa('Hutchinson', 0).
 assistenciaCopa('Hutchinson', 0).
 
-jogador('Osorio').
 selecao('Osorio', canada).
 posicao('Osorio', meia).
 clube('Osorio', toronto).
@@ -1197,13 +1158,13 @@ idade('Osorio', 30).
 golsCopa('Osorio', 0).
 assistenciaCopa('Osorio', 0).
 
-jogador('Buchanan').
 selecao('Buchanan', canada).
 posicao('Buchanan', atacante).
 clube('Buchanan', brugge).
 idade('Buchanan', 23).
 golsCopa('Buchanan', 0).
 assistenciaCopa('Buchanan', 1).
+
 
 %% Selecao Suiça
 
@@ -1296,8 +1257,6 @@ idade('Shaqiri', 31).
 golsCopa('Shaqiri', 1).
 assistenciaCopa('Shaqiri', 1).
 
-%% Selecao Camaronesa
-%% Sem dados
 
 
 

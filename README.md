@@ -1,42 +1,37 @@
-# RepositorioTemplate
-Esse repositório é para ser utilizado pelos grupos como um template inicial, da home page do Projeto.
-As seções do Template NÃO DEVEM SER OMITIDAS, sendo TODAS RELEVANTES.
-
-**!! *Atenção: Renomeie o seu repositório para (Ano.Semestre)_(Grupo)_(Paradigma)_(NomeDoProjeto)*. !!** 
-
-Paradigmas:
- - Funcional
- - Logico
- - SMA
-
-**!! *Não coloque os nomes dos alunos no título do repositório*. !!**
-
-**!! *Exemplo de título correto: 2022.2_G1_Logico_ProjetoRoteirosAereos*. !!**
- 
- (Apague esses comentários)
-
-# NomeDoProjeto
+# Akinator - Copa do Mundo
 
 **Disciplina**: FGA0210 - PARADIGMAS DE PROGRAMAÇÃO - T01 <br>
-**Nro do Grupo (de acordo com a Planilha de Divisão dos Grupos)**: XX<br>
-**Paradigma**: XXXXXXXXXX<br>
+**Nro do Grupo**: 04<br>
+**Paradigma**: Lógico<br>
 
 ## Alunos
-|Matrícula | Aluno |
-| -- | -- |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
+| Matrícula  | Aluno                                    |
+| ---------- | ---------------------------------------- |
+| 19/0124997 | Amanda Jeniffer Pereira Nobre            |
+| 19/0101792 | Ana Carolina Rodrigues Leite             |
+| 17/0101711 | Daniel Barcelos Moreira                  |
+| 16/0119006 | Enzo Gabriel Guedes Queiroz Saraiva      |
+| 18/0018604 | Hugo Sobral de Lima Salomão              |
+| 18/0021974 | Leonardo da Silva Gomes                  |
+| 17/0111288 | Micaella Lorraine Gouveia de Lima        |
 
 ## Sobre 
-Descreva o seu projeto em linhas gerais. 
-Use referências, links, que permitam conhecer um pouco mais sobre o projeto.
-Capriche nessa seção, pois ela é a primeira a ser lida pelos interessados no projeto.
+O projeto consiste em um joguinho bastante conhecido na internet chamado [Akinator](https://pt.akinator.com/) cuja proposta é adivinhar o personagem real ou fictício 
+que o usuário está pensando. Basicamente são feitas perguntas que devem ser respondidas com sim ou não e partir disso é possível chegar na resposta certa.
+
+No nosso projeto o escopo do jogo está limitado aos jogadores das seleções da Copa do Mundo de 2022, sendo possível responder perguntas sobre
+- Time do jogador
+- Assistências
+- Gols
+- Idade
+- Posição
+- Seleção
 
 ## Screenshots
 Adicione 2 ou mais screenshots do projeto em termos de interface e/ou funcionamento.
 
 ## Instalação 
-**Linguagens**: xxxxxx<br>
+**Linguagens**: Prolog<br>
 **Tecnologias**: xxxxxx<br>
 Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
 Insira um manual ou um script para auxiliar ainda mais.
@@ -58,18 +53,31 @@ OBS: TODOS DEVEM PARTICIPAR, CONFERINDO PONTOS DE VISTA.
 TEMPO: +/- 15min
 
 ## Participações
-Apresente, brevemente, como cada membro do grupo contribuiu para o projeto.
-|Nome do Membro | Contribuição | Significância da Contribuição para o Projeto (Excelente/Boa/Regular/Ruim/Nula) |
-| -- | -- | -- |
-| Fulano  |  Programação dos Fatos da Base de Conhecimento Lógica | Boa |
+
+| Nome do Membro                      | Contribuição | Significância da Contribuição para o Projeto |
+| ----------------------------------- | ------------ | -------------------------------------------- |
+| Amanda Jeniffer Pereira Nobre       | -            | Boa                                          |
+| Ana Carolina Rodrigues Leite        | -            | Boa                                          |
+| Daniel Barcelos Moreira             | -            | Boa                                          |
+| Enzo Gabriel Guedes Queiroz Saraiva | -            | Boa                                          |
+| Hugo Sobral de Lima Salomão         | -            | Excelente                                    |
+| Leonardo da Silva Gomes             | -            | Excelente                                    |
+| Micaella Lorraine Gouveia de Lima   | -            | Excelente                                    |
+
+(Excelente/Boa/Regular/Ruim/Nula)
 
 ## Outros 
-Quaisquer outras informações sobre o projeto podem ser descritas aqui. Não esqueça, entretanto, de informar sobre:
-(i) Lições Aprendidas;
-(ii) Percepções;
-(iii) Contribuições e Fragilidades, e
-(iV) Trabalhos Futuros.
+
+### Lições Aprendidas
+-
+
+### Percepções
+-
+
+### Contribuições e Fragilidades
+- 
+
+### Trabalhos Futuros
+-
 
 ## Fontes
-Referencie, adequadamente, as referências utilizadas.
-Indique ainda sobre fontes de leitura complementares.

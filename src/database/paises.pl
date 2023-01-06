@@ -33,7 +33,6 @@ pais(asia, coreiaDoSul).
 pais(asia, ira).
 pais(asia, japao)
 
-
 pais(europa, alemanha).
 pais(europa, belgica).
 pais(europa, croacia).
