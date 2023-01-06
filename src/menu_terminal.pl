@@ -67,9 +67,14 @@ monitoraResposta(Topico, FatoDoJogador, Resposta) :-
 	limpa(Topico, FatoDoJogador),
 	!, menu. 
 
-monitoraResposta(Topico, FatoDoJogador, Resposta):-
+monitoraResposta(Topico, FatoDoJogador, Resposta) :-
 	verifYes(Resposta),
 	
 	retract(pergunta(Topico, _, _)),
 	atualizaJogadores(Topico, FatoDoJogador),
 	!, menu. 
+
+monitoraResposta(Topico, FatoDoJogador, Resposta) :-
+	Resposta == 'rei',
+	
+	write('O REI, Pelé'), nl, halt, !. 
