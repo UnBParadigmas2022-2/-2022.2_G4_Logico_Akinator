@@ -9,17 +9,94 @@ limpaJogadores([]) :- !.
 
 %% Selecao Holandesa
 
-jogador('Noppert',holanda,goleiro,heerenveen,28,0,0).
-jogador('Dumfries',holanda,defensor,inter,26,1,2).
-jogador('VanDijk',holanda,defensor,liverpool,31,0,0).
-jogador('Blind',holanda,defensor,ajax,holanda,32,1,1).
-jogador('Ake',holanda,defensor,manchesterCity,27,0,0).
-jogador('Roon',holanda,meia,atalanta,31,1,1).
-jogador('DeJong',holanda,meia,barcelona,25,1,1).
-jogador('Klaassen',holanda,meia,ajax,29,1,2).
-jogador('Koopmeiners',holanda,atacante,atalanta,24,0,1).
-jogador('Gakpo',holanda,atacante,psv,23,3,0).
-jogador('Depay',holanda,atacante,barcelona,28,1,0).
+jogador('Noppert').
+selecao('Noppert', holanda).
+posicao('Noppert',goleiro).
+clube('Noppert',heerenveen).
+idade('Noppert',28).
+golsCopa('Noppert',0).
+assistenciaCopa('Noppert',0).
+
+jogador('Dumfries').
+selecao('Noppert', holanda).
+posicao('Dumfries',defensor).
+clube('Dumfries',inter).
+idade('Dumfries',26).
+golsCopa('Dumfries',1).
+assistenciaCopa('Dumfries',2).
+
+jogador('VanDijk').
+selecao('Noppert', holanda).
+posicao('VanDijk',defensor).
+clube('VanDijk',liverpool).
+idade('VanDijk',31).
+golsCopa('VanDijk',0).
+assistenciaCopa('VanDijk',0).
+
+jogador('Blind').
+selecao('Noppert', holanda).
+posicao('Blind',defensor).
+clube('Blind',ajax).
+idade('Blind',32).
+golsCopa('Blind',1).
+assistenciaCopa('Blind',1).
+
+jogador('Ake').
+selecao('Noppert', holanda).
+posicao('Ake',defensor).
+clube('Ake',manchesterCity).
+idade('Ake',27).
+golsCopa('Ake',0).
+assistenciaCopa('Ake',0).
+
+jogador('Roon').
+selecao('Noppert', holanda).
+posicao('Roon',meia).
+clube('Roon',atalanta).
+idade('Roon',31).
+golsCopa('Roon',1).
+assistenciaCopa('Roon',1).
+
+jogador('DeJong').
+selecao('Noppert', holanda).
+posicao('DeJong',meia).
+clube('DeJong',barcelona).
+idade('DeJong',25).
+golsCopa('DeJong',1).
+assistenciaCopa('DeJong',1).
+
+jogador('Klaassen').
+selecao('Noppert', holanda).
+posicao('Klaassen',meia).
+clube('Klaassen',ajax).
+idade('Klaassen',29).
+golsCopa('Klaassen',1).
+assistenciaCopa('Klaassen',2).
+
+jogador('Koopmeiners').
+selecao('Noppert', holanda).
+posicao('Koopmeiners',atacante).
+clube('Koopmeiners',atalanta).
+idade('Koopmeiners',24).
+golsCopa('Koopmeiners',0).
+assistenciaCopa('Koopmeiners',1).
+
+jogador('Gakpo').
+selecao('Noppert', holanda).
+posicao('Gakpo',atacante).
+clube('Gakpo',psv).
+idade('Gakpo',23).
+golsCopa('Gakpo',3).
+assistenciaCopa('Gakpo',0).
+
+jogador('Depay').
+selecao('Noppert', holanda).
+posicao('Depay',atacante).
+clube('Depay',barcelona).
+idade('Depay',28).
+golsCopa('Depay',1).
+assistenciaCopa('Depay',0).
+
 
 %% Selecao Inglesa
 
