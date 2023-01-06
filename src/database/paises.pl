@@ -45,10 +45,11 @@ pais(america, mexico).
 pais(america, uruguai).
 
 pais(asia, arabia).
+pais(asia, catar).
 pais(asia, coreiaDoSul).
 pais(asia, ira).
 pais(asia, japao)
-pais(asia, qatar).
+
 
 pais(europa, alemanha).
 pais(europa, belgica).
