@@ -1,6 +1,6 @@
 :- dynamic jogador/4.
 
-:- initialization(fluxo_do_jogo).
+:- use_module(library(lists)).
 
 % jogador, posicao, selecao, camisa
 jogador(ney, atacante, brasil, 10).
@@ -15,6 +15,7 @@ jogador(messi, atacante, argentina, 10).
 pergunta(messi, argentina).
 pergunta(messi, camisa10).
 
+% função que verifica a condição
 verifica_vitoria(0):- write("Perdemos"), halt.
 verifica_vitoria(1):- write("Ganhamos"), halt.
 verifica_vitoria(X):- !.
@@ -31,7 +32,7 @@ fluxo_do_jogo:- % verifica vitória
                 % randomiza pergunta
                 findall(X, pergunta(JogadorAleatorio, X), PerguntasDoJogador),
                 random_member(TemaDaPergunta, PerguntasDoJogador),
-                lidar_pergunta(TemaDaPergunta).
+                lidar_pergunta(TemaDaPergunta),
                 fluxo_do_jogo.
 
 % ------ Lidar com nacionalidades ------ %
@@ -63,40 +64,69 @@ lidar_pergunta(camisa9) :-
 % ------ Atualiza nacionalidades ------ %
 atualizar_nacionalidade(s, Selecao):-
     findall(Jogador, jogador(Jogador, _, Selecao, _), JogadoresDaSelecao),
-    write(JogadoresDaSelecao), nl,
-    limpar_base_inteira(X),
-    adiciona_jogadores_da_lista(JogadoresDaSelecao).
+    exclui_jogadores_fora_da_lista(JogadoresDaSelecao).
 atualizar_nacionalidade(n, Selecao):- 
     findall(Jogador, jogador(Jogador, _, Selecao, _), JogadoresDaSelecao),
-    remove_jogadores_da_lista(JogadoresDaSelecao).
+    exclui_jogadores_da_lista(JogadoresDaSelecao).
 % ------------------------------------- %
 
-% jogador, posicao, selecao, camisa
 
 % ------ Atualiza camisa ------ %
 atualizar_camisa(s, Numero) :- 
     findall(Jogador, jogador(Jogador, _, _, Numero), JogadoresDaCamisa),
-    limpar_base_inteira(X),
-    adiciona_jogadores_da_lista(JogadoresDaCamisa).
+    exclui_jogadores_fora_da_lista(JogadoresDaCamisa).
 
 atualizar_camisa(n, Numero) :- 
     findall(Jogador, jogador(Jogador, _, _, Numero), JogadoresDaCamisa),
-    remove_jogadores_da_lista(JogadoresDaCamisa).
+    exclui_jogadores_da_lista(JogadoresDaCamisa).
 % ----------------------------- %
 
 
-remove_jogadores_da_lista([H|T]) :-
-    retract(jogador(H)),
-    remove_jogadores_da_lista(T).
-remove_jogadores_da_lista([]) :- !.
+% ---------- Lida com respostas negativas ---------- %
+exclui_jogadores_da_lista(ListaDeJogadores) :-
+    findall(Jogador, jogador(Jogador, _, _, _), TodosJogadores),
+    remove_in(TodosJogadores, ListaDeJogadores).
 
-adiciona_jogadores_da_lista([H|T]) :-
-    assert(jogador(H)),
-    adiciona_jogadores_da_lista(T).
-adiciona_jogadores_da_lista([]) :- !.
+remove_in(All, [H|T]) :- (
+    member(H, All) -> 
+        retract(jogador(H,_,_,_)) , remove_in(All, T) ;
+        remove_in(All, T)
+).
+remove_in(All, []) :- !.
+% ---------- Lida com respostas negativas ---------- %
 
-limpar_base_inteira(X) :- limpa_jogador(X), fail.
-limpar_base_inteira(X).
 
-limpa_jogador(X) :- retract(jogador(X)).
-limpa_jogador(X).
+% ---------- Lida com respostas positivas ---------- %
+exclui_jogadores_fora_da_lista(ListaDeJogadores) :-
+    findall(Jogador, jogador(Jogador, _, _, _), TodosJogadores),
+    remove_out(TodosJogadores, ListaDeJogadores).
+
+remove_out([H|T], Lista) :- 
+    member(H, Lista),
+    remove_out(T, Lista).
+
+remove_out([H|T], Lista) :- 
+    retract(jogador(H,_,_,_)),
+    remove_out(T, Lista).
+
+remove_out([], Lista) :- !.
+% ---------- Lida com respostas positivas ---------- %
+
+
+
+% --- testes --- %
+verifica_lista(Novo) :- 
+    findall(Jogador, jogador(Jogador, _, _, _), Lista),
+    member(Novo, Lista).
+
+verifica_lista_not(Novo) :- 
+    findall(Jogador, jogador(Jogador, _, _, _), Lista),
+    not(member(Novo, Lista)).
+
+
+exemplo_if(X) :- (
+    X < 0 ->
+        write("Eh menor"), nl ;
+        write("Eh maior ou igual"), nl
+).
+    
