@@ -7,6 +7,7 @@ obtemPergunta(Indicador, Topico, _) :-
 	pergunta(Topico, Prefix, Sufix),
 	write(Prefix), write(Indicador), write(Sufix), nl,
 	write('Resposta: '), read(Resposta),
+	querSair(Resposta),
 
 	!, monitoraResposta(Topico, Indicador, Resposta).
 

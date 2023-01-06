@@ -11,15 +11,12 @@
 :- dynamic jogador/1.
 :- dynamic pergunta/3.
 
-verifYes(X) :- (X == y; X == yes; X == s; X == sim), !.
-verifyNo(X) :- (X == n; X == no; X == nao), !.
-
-incrementa(Atual, Proximo) :- Proximo is Atual + 1, !.
 
 carregaTool :- 
 	consult('v1/tool/atualiza.pl'),
 	consult('v1/tool/limpa.pl'),
-	consult('v1/tool/obtem.pl').
+	consult('v1/tool/obtem.pl'),
+	consult('v1/tool/aux.pl').
 
 carregaArquivos :- 
 	consult('v1/database/paises.pl'),
@@ -44,23 +41,13 @@ base :-
 
 	printa_header,
 
+	write('(Para sair a qualquer momento escreva "sair" ou "exit")'), nl,
 	write('Pense em um jogador e aperte s quando estiver pronto'), nl,
 	read(Resposta),
-	
+	querSair(Resposta),
+
 	verifYes(Resposta),
 	menu, !.
-
-perdeuDemais(Numero) :- Numero == 0, write('Eita, não sei quem é'), nl, halt, !.
-perdeuDemais(_) :- !.
-
-ocorreuAlgo(Numero, _) :- Numero == 0, write('Eita, não sei quem é'), nl, halt, !.
-ocorreuAlgo(Numero, [H|T]) :- Numero == 1, write('Venceu, seu jogador é o '), write(H), halt, !.
-ocorreuAlgo(_, _) :- !.
-
-
-veSeGanhou(Lista) :-
-	length(Lista, Length),
-	ocorreuAlgo(Length, Lista).
 
 menu :-
 	% Shuffle Jogador
