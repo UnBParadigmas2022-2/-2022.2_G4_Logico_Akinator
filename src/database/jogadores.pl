@@ -21,7 +21,6 @@ jogador('Koopmeiners',holanda,atacante,atalanta,24,0,1).
 jogador('Gakpo',holanda,atacante,psv,23,3,0).
 jogador('Depay',holanda,atacante,barcelona,28,1,0).
 
-
 selecao('Noppert', holanda).
 posicao('Noppert',goleiro).
 clube('Noppert',heerenveen).
@@ -113,7 +112,6 @@ jogador('Saka',inglaterra,meia,arsenal,21,3,0).
 jogador('Phoden',inglaterra,atacante,manchesterCity,22,1,2).
 jogador('Kane',inglaterra,atacante,tottenham,29,2,3).
 jogador('Rashford',inglaterra,atacante,manchesterUnited,25,3,0).
-
 
 selecao('Pickford', inglaterra).
 posicao('Pickford', goleiro).
@@ -743,6 +741,7 @@ idade('CristianoRonaldo', 37).
 golsCopa('CristianoRonaldo', 1).
 assistenciaCopa('CristianoRonaldo', 0).
 
+
 %% Selecao Japonesa
 
 jogador('Gonda',japao,goleiro,shimizuSPulse,33,0,0).
@@ -756,6 +755,84 @@ jogador('Kamada',japao,meia,frankfurt,25,0,0).
 jogador('Doan',japao,atacante,freiburg,24,2,0).
 jogador('JunyaIto',japao,atacante,reims,29,0,1).
 jogador('Asano',japao,atacante,bochum,28,1,0).
+
+selecao('Gonda', japao).
+posicao('Gonda', goleiro).
+clube('Gonda', shimizuSPulse).
+idade('Gonda', 33).
+golsCopa('Gonda', 0).
+assistenciaCopa('Gonda', 0).
+
+selecao('Nagatomo', japao).
+posicao('Nagatomo', defensor).
+clube('Nagatomo', tokyo).
+idade('Nagatomo', 36).
+golsCopa('Nagatomo', 0).
+assistenciaCopa('Nagatomo', 0).
+
+selecao('Yoshida', japao).
+posicao('Yoshida', defensor).
+clube('Yoshida', schalke).
+idade('Yoshida', 34).
+golsCopa('Yoshida', 0).
+assistenciaCopa('Yoshida', 1).
+
+selecao('Itakura', japao).
+posicao('Itakura', defensor).
+clube('Itakura', gladbach).
+idade('Itakura', 25).
+golsCopa('Itakura', 0).
+assistenciaCopa('Itakura', 1).
+
+selecao('Tomiyasu', japao).
+posicao('Tomiyasu', defensor).
+clube('Tomiyasu', arsenal).
+idade('Tomiyasu', 24).
+golsCopa('Tomiyasu', 0).
+assistenciaCopa('Tomiyasu', 0).
+
+selecao('Endo', japao).
+posicao('Endo', meia).
+clube('Endo', stuttgart).
+idade('Endo', 29).
+golsCopa('Endo', 0).
+assistenciaCopa('Endo', 0).
+
+selecao('Mitoma', japao).
+posicao('Mitoma', meia).
+clube('Mitoma', brighton).
+idade('Mitoma', 25).
+golsCopa('Mitoma', 0).
+assistenciaCopa('Mitoma', 1).
+
+selecao('Kamada', japao).
+posicao('Kamada', meia).
+clube('Kamada', frankfurt).
+idade('Kamada', 25).
+golsCopa('Kamada', 0).
+assistenciaCopa('Kamada', 0).
+
+selecao('Doan', japao).
+posicao('Doan', atacante).
+clube('Doan', freiburg).
+idade('Doan', 24).
+golsCopa('Doan', 2).
+assistenciaCopa('Doan', 0).
+
+selecao('JunyaIto', japao).
+posicao('JunyaIto', atacante).
+clube('JunyaIto', reims).
+idade('JunyaIto', 29).
+golsCopa('JunyaIto', 0).
+assistenciaCopa('JunyaIto', 1).
+
+selecao('Asano', japao).
+posicao('Asano', atacante).
+clube('Asano', bochum).
+idade('Asano', 28).
+golsCopa('Asano', 1).
+assistenciaCopa('Asano', 0).
+
 
 %% Selecao Alema
 
@@ -771,6 +848,84 @@ jogador('Müller',alemanha,atacante,bayern,33,0,0).
 jogador('Musiala',alemanha,atacante,bayern,19,0,1).
 jogador('Sané',alemanha,atacante,bayern,26,0,1).
 
+selecao('Neuer', alemanha).
+posicao('Neuer', goleiro).
+clube('Neuer', bayern).
+idade('Neuer', 36).
+golsCopa('Neuer', 0).
+assistenciaCopa('Neuer', 0).
+
+selecao('Rüdiger', alemanha).
+posicao('Rüdiger', defensor).
+clube('Rüdiger', realMadrid).
+idade('Rüdiger', 29).
+golsCopa('Rüdiger', 0).
+assistenciaCopa('Rüdiger', 0).
+
+selecao('Raum', alemanha).
+posicao('Raum', defensor).
+clube('Raum', leipzig).
+idade('Raum', 24).
+golsCopa('Raum', 0).
+assistenciaCopa('Raum', 1).
+
+selecao('Süle', alemanha).
+posicao('Süle', defensor).
+clube('Süle', borussiaDortmund).
+idade('Süle', 27).
+golsCopa('Süle', 0).
+assistenciaCopa('Süle', 0).
+
+selecao('Kimmich', alemanha).
+posicao('Kimmich', meia).
+clube('Kimmich', bayern).
+idade('Kimmich', 27).
+golsCopa('Kimmich', 0).
+assistenciaCopa('Kimmich', 1).
+
+selecao('Havertz', alemanha).
+posicao('Havertz', meia).
+clube('Havertz', chelsea).
+idade('Havertz', 23).
+golsCopa('Havertz', 2).
+assistenciaCopa('Havertz', 0).
+
+selecao('Füllkrug', alemanha).
+posicao('Füllkrug', atacante).
+clube('Füllkrug', werderBremen).
+idade('Füllkrug', 29).
+golsCopa('Füllkrug', 2).
+assistenciaCopa('Füllkrug', 1).
+
+selecao('Gnabry', alemanha).
+posicao('Gnabry', atacante).
+clube('Gnabry', bayern).
+idade('Gnabry', 27).
+golsCopa('Gnabry', 1).
+assistenciaCopa('Gnabry', 2).
+
+selecao('Müller', alemanha).
+posicao('Müller', atacante).
+clube('Müller', bayern).
+idade('Müller', 33).
+golsCopa('Müller', 0).
+assistenciaCopa('Müller', 0).
+
+selecao('Musiala', alemanha).
+posicao('Musiala', atacante).
+clube('Musiala', bayern).
+idade('Musiala', 19).
+golsCopa('Musiala', 0).
+assistenciaCopa('Musiala', 1).
+
+selecao('Sané', alemanha).
+posicao('Sané', atacante).
+clube('Sané', bayern).
+idade('Sané', 26).
+golsCopa('Sané', 0).
+assistenciaCopa('Sané', 1).
+
+
 %% Selecao Costarriquenha
 
 jogador('Navas',costaRica,goleiro,psg,36,0,0).
@@ -784,6 +939,84 @@ jogador('Borges',costaRica,meia,alajuelense,34,0,0).
 jogador('Tejeda',costaRica,meia,herediano,30,1,1).
 jogador('Aguilera',costaRica,meia,alajuelense,19,0,0).
 jogador('Bennette',costaRica,atacante,sunderland,18,0,0).
+
+selecao('Navas', costaRica).
+posicao('Navas', goleiro).
+clube('Navas', psg).
+idade('Navas', 36).
+golsCopa('Navas', 0).
+assistenciaCopa('Navas', 0).
+
+selecao('Vargas', costaRica).
+posicao('Vargas', defensor).
+clube('Vargas', millonarios).
+idade('Vargas', 27).
+golsCopa('Vargas', 1).
+assistenciaCopa('Vargas', 0).
+
+selecao('Fuller', costaRica).
+posicao('Fuller', defensor).
+clube('Fuller', herediano).
+idade('Fuller', 28).
+golsCopa('Fuller', 1).
+assistenciaCopa('Fuller', 0).
+
+selecao('Duarte', costaRica).
+posicao('Duarte', defensor).
+clube('Duarte', levante).
+idade('Duarte', 33).
+golsCopa('Duarte', 0).
+assistenciaCopa('Duarte', 0).
+
+selecao('Oviedo', costaRica).
+posicao('Oviedo', defensor).
+clube('Oviedo', saltLake).
+idade('Oviedo', 32).
+golsCopa('Oviedo', 0).
+assistenciaCopa('Oviedo', 0).
+
+selecao('Waston', costaRica).
+posicao('Waston', defensor).
+clube('Waston', saprissa).
+idade('Waston', 35).
+golsCopa('Waston', 0).
+assistenciaCopa('Waston', 0).
+
+selecao('Matarrita', costaRica).
+posicao('Matarrita', defensor).
+clube('Matarrita', cincinnati).
+idade('Matarrita', 34).
+golsCopa('Matarrita', 0).
+assistenciaCopa('Matarrita', 0).
+
+selecao('Borges', costaRica).
+posicao('Borges', meia).
+clube('Borges', alajuelense).
+idade('Borges', 30).
+golsCopa('Borges', 1).
+assistenciaCopa('Borges', 1).
+
+selecao('Tejeda', costaRica).
+posicao('Tejeda', meia).
+clube('Tejeda', herediano).
+idade('Tejeda', 33).
+golsCopa('Tejeda', 0).
+assistenciaCopa('Tejeda', 0).
+
+selecao('Aguilera', costaRica).
+posicao('Aguilera', meia).
+clube('Aguilera', alajuelense).
+idade('Aguilera', 19).
+golsCopa('Aguilera', 0).
+assistenciaCopa('Aguilera', 0).
+
+selecao('Bennette', costaRica).
+posicao('Bennette', atacante).
+clube('Bennette', sunderland).
+idade('Bennette', 18).
+golsCopa('Bennette', 0).
+assistenciaCopa('Bennette', 0).
+
 
 %% Selecao Marroquina
 
@@ -799,6 +1032,84 @@ jogador('Ziyech',marrocos,meia,chelsea,29,1,1).
 jogador('Sabiri',marrocos,meia,sampdoria,26,0,1).
 jogador('En-Nesyri',marrocos,atacante,sevilla,25,2,0).
 
+selecao('Bounou', marrocos).
+posicao('Bounou', defensor).
+clube('Bounou', sevilla).
+idade('Bounou', 31).
+golsCopa('Bounou', 0).
+assistenciaCopa('Bounou', 0).
+
+selecao('Hakimi', marrocos).
+posicao('Hakimi', defensor).
+clube('Hakimi', psg).
+idade('Hakimi', 24).
+golsCopa('Hakimi', 0).
+assistenciaCopa('Hakimi', 1).
+
+selecao('Mazraoui', marrocos).
+posicao('Mazraoui', defensor).
+clube('Mazraoui', bayern).
+idade('Mazraoui', 25).
+golsCopa('Mazraoui', 1).
+assistenciaCopa('Mazraoui', 0).
+
+selecao('Aguerd', marrocos).
+posicao('Aguerd', defensor).
+clube('Aguerd', westHam).
+idade('Aguerd', 26).
+golsCopa('Aguerd', 0).
+assistenciaCopa('Aguerd', 0).
+
+selecao('Saïss', marrocos).
+posicao('Saïss', defensor).
+clube('Saïss', besiktas).
+idade('Saïss', 32).
+golsCopa('Saïss', 1).
+assistenciaCopa('Saïss', 0).
+
+selecao('Yamiq', marrocos).
+posicao('Yamiq', defensor).
+clube('Yamiq', valladolid).
+idade('Yamiq', 30).
+golsCopa('Yamiq', 0).
+assistenciaCopa('Yamiq', 0).
+
+selecao('Dari', marrocos).
+posicao('Dari', defensor).
+clube('Dari', brest).
+idade('Dari', 23).
+golsCopa('Dari', 1).
+assistenciaCopa('Dari', 0).
+
+selecao('Attiyat-Allah', marrocos).
+posicao('Attiyat-Allah', defensor).
+clube('Attiyat-Allah', wydad).
+idade('Attiyat-Allah', 27).
+golsCopa('Attiyat-Allah', 0).
+assistenciaCopa('Attiyat-Allah', 1).
+
+selecao('Ziyech', marrocos).
+posicao('Ziyech', meia).
+clube('Ziyech', chelsea).
+idade('Ziyech', 29).
+golsCopa('Ziyech', 1).
+assistenciaCopa('Ziyech', 1).
+
+selecao('Sabiri', marrocos).
+posicao('Sabiri', meia).
+clube('Sabiri', sampdoria).
+idade('Sabiri', 26).
+golsCopa('Sabiri', 0).
+assistenciaCopa('Sabiri', 1).
+
+selecao('En-Nesyri', marrocos).
+posicao('En-Nesyri', atacante).
+clube('En-Nesyri', sevilla).
+idade('En-Nesyri', 25).
+golsCopa('En-Nesyri', 2).
+assistenciaCopa('En-Nesyri', 0).
+
+
 %% Selecao Croata
 
 jogador('Livakovic',croacia,goleiro,dZagreb,27,0,0).
@@ -812,6 +1123,84 @@ jogador('Modric',croacia,meia,realMadrid,37,0,0).
 jogador('Livaja',croacia,atacante,hajdukSplit,29,1,1).
 jogador('Petkovic',croacia,atacante,dZagreb,28,1,0).
 jogador('Orsic',croacia,atacante,dZagreb,30,1,2).
+
+selecao('Livakovic', goleiro).
+posicao('Livakovic', defensor).
+clube('Livakovic', dZagreb).
+idade('Livakovic', 37).
+golsCopa('Livakovic', 0).
+assistenciaCopa('Livakovic', 0).
+
+selecao('Lovren', croacia).
+posicao('Lovren', defensor).
+clube('Lovren', lyon).
+idade('Lovren', 33).
+golsCopa('Lovren', 0).
+assistenciaCopa('Lovren', 1).
+
+selecao('Sosa', croacia).
+posicao('Sosa', defensor).
+clube('Sosa', stuttgart).
+idade('Sosa', 24).
+golsCopa('Sosa', 0).
+assistenciaCopa('Sosa', 0).
+
+selecao('Gvardiol', croacia).
+posicao('Gvardiol', defensor).
+clube('Gvardiol', leipzig).
+idade('Gvardiol', 20).
+golsCopa('Gvardiol', 1).
+assistenciaCopa('Gvardiol', 0).
+
+selecao('Juranovic', croacia).
+posicao('Juranovic', defensor).
+clube('Juranovic', celtic).
+idade('Juranovic', 27).
+golsCopa('Juranovic', 0).
+assistenciaCopa('Juranovic', 1).
+
+selecao('Perisic', croacia).
+posicao('Perisic', meia).
+clube('Perisic', tottenham).
+idade('Perisic', 33).
+golsCopa('Perisic', 1).
+assistenciaCopa('Perisic', 3).
+
+selecao('Kovacic', croacia).
+posicao('Kovacic', meia).
+clube('Kovacic', chelsea).
+idade('Kovacic', 28).
+golsCopa('Kovacic', 0).
+assistenciaCopa('Kovacic', 0).
+
+selecao('Modric', croacia).
+posicao('Modric', meia).
+clube('Modric', realMadrid).
+idade('Modric', 37).
+golsCopa('Modric', 0).
+assistenciaCopa('Modric', 0).
+
+selecao('Livaja', croacia).
+posicao('Livaja', atacante).
+clube('Livaja', hajdukSplit).
+idade('Livaja', 29).
+golsCopa('Livaja', 1).
+assistenciaCopa('Livaja', 1).
+
+selecao('Petkovic', croacia).
+posicao('Petkovic', atacante).
+clube('Petkovic', dZagreb).
+idade('Petkovic', 28).
+golsCopa('Petkovic', 1).
+assistenciaCopa('Petkovic', 0).
+
+selecao('Orsic', croacia).
+posicao('Orsic', atacante).
+clube('Orsic', dZagreb).
+idade('Orsic', 30).
+golsCopa('Orsic', 1).
+assistenciaCopa('Orsic', 2).
+
 
 %% Selecao Canadense
 
@@ -827,6 +1216,84 @@ jogador('Hutchinson',canada,meia,besiktas,39,0,0).
 jogador('Osorio',canada,meia,toronto,30,0,0).
 jogador('Buchanan',canada,atacante,brugge,23,0,1).
 
+selecao('Borjan', canada).
+posicao('Borjan', goleiro).
+clube('Borjan', redStar).
+idade('Borjan', 35).
+golsCopa('Borjan', 0).
+assistenciaCopa('Borjan', 0).
+
+selecao('Johnston', canada).
+posicao('Johnston', defensor).
+clube('Johnston', celtic).
+idade('Johnston', 24).
+golsCopa('Johnston', 0).
+assistenciaCopa('Johnston', 0).
+
+selecao('Adekugbe', canada).
+posicao('Adekugbe', defensor).
+clube('Adekugbe', hataysport).
+idade('Adekugbe', 27).
+golsCopa('Adekugbe', 0).
+assistenciaCopa('Adekugbe', 0).
+
+selecao('Miller', canada).
+posicao('Miller', defensor).
+clube('Miller', montreal).
+idade('Miller', 2h).
+golsCopa('Miller', 0).
+assistenciaCopa('Miller', 0).
+
+selecao('Vitória', canada).
+posicao('Vitória', defensor).
+clube('Vitória', chaves).
+idade('Vitória', 35).
+golsCopa('Vitória', 0).
+assistenciaCopa('Vitória', 0).
+
+selecao('Davies', canada).
+posicao('Davies', defensor).
+clube('Davies', bayern).
+idade('Davies', 22).
+golsCopa('Davies', 1).
+assistenciaCopa('Davies', 0).
+
+selecao('Laryea', canada).
+posicao('Laryea', defensor).
+clube('Laryea', toronto).
+idade('Laryea', 27).
+golsCopa('Laryea', 0).
+assistenciaCopa('Laryea', 0).
+
+selecao('Hoilett', canada).
+posicao('Hoilett', meia).
+clube('Hoilett', reading).
+idade('Hoilett', 32).
+golsCopa('Hoilett', 0).
+assistenciaCopa('Hoilett', 0).
+
+selecao('Hutchinson', canada).
+posicao('Hutchinson', meia).
+clube('Hutchinson', besiktas).
+idade('Hutchinson', 39).
+golsCopa('Hutchinson', 0).
+assistenciaCopa('Hutchinson', 0).
+
+selecao('Osorio', canada).
+posicao('Osorio', meia).
+clube('Osorio', toronto).
+idade('Osorio', 30).
+golsCopa('Osorio', 0).
+assistenciaCopa('Osorio', 0).
+
+selecao('Buchanan', canada).
+posicao('Buchanan', atacante).
+clube('Buchanan', brugge).
+idade('Buchanan', 23).
+golsCopa('Buchanan', 0).
+assistenciaCopa('Buchanan', 1).
+
+
 %% Selecao Suiça
 
 jogador('Sommer',suica,goleiro,gladbach,34,0,0).
@@ -834,15 +1301,90 @@ jogador('Akanji',suica,defensor,manchesterCity,27,1,0).
 jogador('Rodríguez',suica,defensor,torino,30,0,0).
 jogador('Widmer',suica,defensor,mainz,29,0,0).
 jogador('Fernandes',suica,meia,mainz,26,0,0).
-jogador('Freuler',suica,meia,nottmForest,30,1,0).
+jogador('Freuler',suica,meia,nottinghamForest,30,1,0).
 jogador('Xhaka',suica,meia,arsenal,30,0,0).
 jogador('Sow',suica,meia,frankfurt,25,0,0).
 jogador('Vargas',suica,meia,augsburgo,24,0,0).
-jogador('Embolo',suica,atacante,monaco,25,2,0).
 jogador('Shaqiri',suica,meia,chicago,31,1,1).
+jogador('Embolo',suica,atacante,monaco,25,2,0).
 
-%% Selecao Camaronesa
-%% Sem dados
+selecao('Sommer', suica).
+posicao('Sommer', goleiro).
+clube('Sommer', gladbach).
+idade('Sommer', 34).
+golsCopa('Sommer', 0).
+assistenciaCopa('Sommer', 0).
+
+selecao('Akanji', suica).
+posicao('Akanji', defensor).
+clube('Akanji', manchesterCity).
+idade('Akanji', 27).
+golsCopa('Akanji', 1).
+assistenciaCopa('Akanji', 0).
+
+selecao('Rodríguez', suica).
+posicao('Rodríguez', defensor).
+clube('Rodríguez', torino).
+idade('Rodríguez', 30).
+golsCopa('Rodríguez', 0).
+assistenciaCopa('Rodríguez', 0).
+
+selecao('Widmer', suica).
+posicao('Widmer', defensor).
+clube('Widmer', mainz).
+idade('Widmer', 29).
+golsCopa('Widmer', 0).
+assistenciaCopa('Widmer', 0).
+
+selecao('Fernandes', suica).
+posicao('Fernandes', meia).
+clube('Fernandes', mainz).
+idade('Fernandes', 26).
+golsCopa('Fernandes', 0).
+assistenciaCopa('Fernandes', 0).
+
+selecao('Freuler', suica).
+posicao('Freuler', meia).
+clube('Freuler', nottinghamForest).
+idade('Freuler', 30).
+golsCopa('Freuler', 1).
+assistenciaCopa('Freuler', 0).
+
+selecao('Xhaka', suica).
+posicao('Xhaka', meia).
+clube('Xhaka', arsenal).
+idade('Xhaka', 30).
+golsCopa('Xhaka', 0).
+assistenciaCopa('Xhaka', 0).
+
+selecao('Sow', suica).
+posicao('Sow', meia).
+clube('Sow', frankfurt).
+idade('Sow', 25).
+golsCopa('Sow', 0).
+assistenciaCopa('Sow', 0).
+
+selecao('Vargas', suica).
+posicao('Vargas', meia).
+clube('Vargas', augsburg).
+idade('Vargas', 24).
+golsCopa('Vargas', 0).
+assistenciaCopa('Vargas', 0).
+
+selecao('Shaqiri', suica).
+posicao('Shaqiri', meia).
+clube('Shaqiri', chicago).
+idade('Shaqiri', 31).
+golsCopa('Shaqiri', 1).
+assistenciaCopa('Shaqiri', 1).
+
+selecao('Embolo', suica).
+posicao('Embolo', atacante).
+clube('Embolo', monaco).
+idade('Embolo', 25).
+golsCopa('Embolo', 2).
+assistenciaCopa('Embolo', 0).
+
 
 %% Selecao Sérvia
 
