@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  v1:
+    image: swipl
+    working_dir: /src
+    ports:
+      - 8080:80
+    volumes:
+      - ./:/src
+    command: swipl ./menu_terminal.pl
+  v2:
+    image: swipl
+    working_dir: /src
+    ports:
+      - 8081:81
+    volumes:
+      - ./:/src
+    command: ls

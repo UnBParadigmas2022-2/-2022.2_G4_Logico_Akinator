@@ -1,3 +1,6 @@
+:-style_check(-discontiguous).
+:-style_check(-singleton).
+
 obtemPergunta(Indicador, Topico, _) :-
 	Indicador \= '',
 

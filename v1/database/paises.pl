@@ -1,3 +1,6 @@
+:-style_check(-discontiguous).
+:-style_check(-singleton).
+
 %% Fatos
 
 %% continente(continente)
@@ -31,7 +34,7 @@ pais(asia, arabia).
 pais(asia, catar).
 pais(asia, coreiaDoSul).
 pais(asia, ira).
-pais(asia, japao)
+pais(asia, japao).
 
 pais(europa, alemanha).
 pais(europa, belgica).

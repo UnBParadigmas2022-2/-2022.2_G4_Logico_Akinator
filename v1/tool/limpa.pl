@@ -1,3 +1,6 @@
+:-style_check(-discontiguous).
+:-style_check(-singleton).
+
 deleteJogadores(ListaDeJogadores) :-
 	findall(Choice, jogador(Choice), TodosJogadores),
 	intersection(ListaDeJogadores, TodosJogadores, R),

@@ -1,3 +1,6 @@
+:-style_check(-discontiguous).
+:-style_check(-singleton).
+
 :- use_module(library(lists)).
 :- use_module(library(random)).
 
@@ -14,15 +17,15 @@ verifyNo(X) :- (X == n; X == no; X == nao), !.
 incrementa(Atual, Proximo) :- Proximo is Atual + 1, !.
 
 carregaTool :- 
-	consult('src/tool/atualiza.pl'),
-	consult('src/tool/limpa.pl'),
-	consult('src/tool/obtem.pl').
+	consult('v1/tool/atualiza.pl'),
+	consult('v1/tool/limpa.pl'),
+	consult('v1/tool/obtem.pl').
 
 carregaArquivos :- 
-	consult('src/database/paises.pl'),
-	consult('src/database/clubes.pl'),
-	consult('src/database/jogadores.pl'),
-	consult('src/database/perguntas.pl').
+	consult('v1/database/paises.pl'),
+	consult('v1/database/clubes.pl'),
+	consult('v1/database/jogadores.pl'),
+	consult('v1/database/perguntas.pl').
 				   
 testeBase :-
 	% Carrega os arquivos da base, randomiza o tipo de pergunta e o jogador, por fim chama o "menu"

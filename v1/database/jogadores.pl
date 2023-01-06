@@ -1,3 +1,6 @@
+:-style_check(-discontiguous).
+:-style_check(-singleton).
+
 limpaJogadores([H|T]) :-
 	retract(jogador(H)),
 	limpaJogadores(T), !.
@@ -188,7 +191,7 @@ assistenciaCopa('Phoden', 2).
 
 jogador('Kane').
 selecao('Kane', inglaterra).
-'Kane', posicao(atacante).
+posicao(atacante).
 clube('Kane', tottenham).
 idade('Kane', 29).
 golsCopa('Kane', 2).
@@ -1112,7 +1115,7 @@ assistenciaCopa('Adekugbe', 0).
 selecao('Miller', canada).
 posicao('Miller', defensor).
 clube('Miller', montreal).
-idade('Miller', 2h).
+idade('Miller', 25).
 golsCopa('Miller', 0).
 assistenciaCopa('Miller', 0).
 

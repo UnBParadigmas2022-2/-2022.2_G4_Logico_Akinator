@@ -1,3 +1,6 @@
+:-style_check(-discontiguous).
+:-style_check(-singleton).
+
 :- use_module(library(lists)).
 
 pegaTipoPergunta(Tipo) :-

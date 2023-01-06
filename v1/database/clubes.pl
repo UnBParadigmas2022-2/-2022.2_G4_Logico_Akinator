@@ -1,3 +1,6 @@
+:-style_check(-discontiguous).
+:-style_check(-singleton).
+
 %% Fatos: 
 
 %% paisClube(clube, pais)
