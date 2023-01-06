@@ -17,7 +17,7 @@
 
 ## Sobre 
 O projeto consiste em um joguinho bastante conhecido na internet chamado [Akinator](https://pt.akinator.com/) cuja proposta é adivinhar o personagem real ou fictício 
-que o usuário está pensando. Basicamente são feitas perguntas que devem ser respondidas com sim ou não e partir disso é possível chegar na resposta certa.
+que o usuário está pensando. Basicamente são feitas perguntas que devem ser respondidas com sim ou não e partir disso é possível chegar na resposta certa. Para o projeto foram criadas duas versões com arquiteturas diferentes. 
 
 No nosso projeto o escopo do jogo está limitado aos jogadores das seleções da Copa do Mundo de 2022, sendo possível responder perguntas sobre
 - Time do jogador
@@ -28,38 +28,59 @@ No nosso projeto o escopo do jogo está limitado aos jogadores das seleções da
 - Seleção
 
 ## Screenshots
-Adicione 2 ou mais screenshots do projeto em termos de interface e/ou funcionamento.
+### Versão 1
+![v1inicio](./assets/v1inicio.png)
+![v1rodando](./assets/v1rodando.png)
+
+### Versão 2
+![v2inicio](./assets/v2inicio.png)
+![v2rodando](./assets/v2rodando.png)
+![reiPele](./assets/reiPele.png)
 
 ## Instalação 
 **Linguagens**: Prolog<br>
-**Tecnologias**: xxxxxx<br>
-Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
-Insira um manual ou um script para auxiliar ainda mais.
-Gifs animados e outras ilustrações são bem-vindos!
+**Tecnologias**: SWI Prolog<br>
+**Pré-requisitos**:<br>
+- É possível rodar com o Docker, sendo necessária sua instalação.
+- É possível rodar com o SWIProlog, sendo necessária sua instalação. Segue os guias abaixo
+    - [Mac OS ](https://www.youtube.com/watch?v=sAZbP2cotiM)
+    - [Linux  ](https://www.youtube.com/watch?v=3ghQz1SRJ84)
+    - [Windows](https://www.youtube.com/watch?v=FE1d5vauTlU)
 
 ## Uso 
-Explique como usar seu projeto.
-Procure ilustrar em passos, com apoio de telas do software, seja com base na interface gráfica, seja com base no terminal.
-Nessa seção, deve-se revelar de forma clara sobre o funcionamento do software.
+
+Tanto para a Versão 1 como para a Versão 2 foram criados ambientes isolados.
+
+### Versão 1
+```
+docker-compose run v1
+```
+
+### Versão 2
+```
+docker-compose run v2
+```
+
+Caso tenha algum problema, você pode tentar rodar da seguinte maneira *(é neessária a instalação do SWIProlog)*:
+
+1. Entre na pasta /v2
+2. Rode o comando: ```swipl app.pl```
 
 ## Vídeo
-Adicione 1 ou mais vídeos com a execução do projeto.
-Procure: 
-(i) Introduzir o projeto;
-(ii) Mostrar passo a passo o código, explicando-o, e deixando claro o que é de terceiros, e o que é contribuição real da equipe;
-(iii) Apresentar particularidades do Paradigma, da Linguagem, e das Tecnologias, e
-(iV) Apresentar lições aprendidas, contribuições, pendências, e ideias para trabalhos futuros.
-OBS: TODOS DEVEM PARTICIPAR, CONFERINDO PONTOS DE VISTA.
-TEMPO: +/- 15min
+
+* [**Vídeo da Apresentação**](https://youtu.be/-_BqL57GA6k)
+* [**Link da versão 2 rodando**](https://youtu.be/OwEonY1JrEk)
+* [**Link da versão 1 rodando**](https://youtu.be/nBdPFumx8ao)
+ 
 
 ## Participações
 
 | Nome do Membro                      | Contribuição | Significância da Contribuição para o Projeto |
-| ----------------------------------- | ------------ | -------------------------------------------- |
+| - | - | - |
 | Amanda Jeniffer Pereira Nobre       | População do banco de dados, criação das perguntas | Boa |
 | Ana Carolina Rodrigues Leite        | População do banco de dados, criação das perguntas | Boa |
 | Daniel Barcelos Moreira             | População do banco de dados, criação das perguntas | Boa |
-| Enzo Gabriel Guedes Queiroz Saraiva | Definição de uma estrutura inicial do projeto, criação do menu | Boa | 
+| Enzo Gabriel Guedes Queiroz Saraiva | Definição de uma estrutura inicial do projeto, criação do menu, criação das perguntas, tentaiva de uso de uma interface | Excelente | 
 | Hugo Sobral de Lima Salomão         | Desenvolvimento das versões 1 e 2, como foco na segunda, desenvolvimento da lógica de randomização, perguntas e tratamento com as respostas          | Excelente                                    |
 | Leonardo da Silva Gomes             | Desenvolvimento das versões 1 e 2, com foco na primeira, desenvolvimento da lógica de randomização, perguntas e tratamento com as respostas           | Excelente                                    |
 | Micaella Lorraine Gouveia de Lima   | Desenvolvimento das versões 1 e 2, com foco na primeira, desenvolvimento da lógica das perguntas e tratamento com as respostas, população do banco de dados         | Excelente                                    |
@@ -80,9 +101,12 @@ TEMPO: +/- 15min
 ### Contribuições e Fragilidades
 - O grupo teve dificuldade de inicializar o projeto. Alguns membros se dedicaram para o estudo da linguagem, e com o recesso, não foi possível fazer reuniões com todo o grupo, já que alguns membros estavam viajando.
 - Foram pensadas dois tipos de soluções, e com a falta de tempo de desenvolvimento, o time de dividiu em dois grupos para a implementação das duas ideias.
-- Os membros que consesguiram entender melhor a linguagem ficaram mais ativos e responsáveis pela lógica do jogo, como as perguntas seriam feitas, como elas estariam atreladas aos jogadores.
+- Os membros que conseguiram entender melhor a linguagem ficaram mais ativos e responsáveis pela lógica do jogo, como as perguntas seriam feitas, como elas estariam atreladas aos jogadores.
 
 ### Trabalhos Futuros
--
+- Ampliar a base de dados
+- Criar uma interface gráfica
 
 ## Fontes
+- SWIProlog. Disponível em <https://www.swi-prolog.org/>. Ùltimo acesso em 05/01/2023.
+- Base de dados da Copa do Mundo de 2022. Disponível em <https://www.espn.com.br/futebol/liga/_/nome/fifa.world>. Último acesso em 05/01/2023.
