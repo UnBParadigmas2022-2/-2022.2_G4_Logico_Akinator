@@ -143,7 +143,7 @@ assistenciaCopa('Stones', 0).
 
 jogador('Shaw').
 selecao('Shaw', inglaterra).
-posicao(defensor).
+posicao('Shaw', defensor).
 clube('Shaw', manchesterUnited).
 idade('Shaw', 27).
 golsCopa('Shaw', 0).
@@ -151,7 +151,7 @@ assistenciaCopa('Shaw', 1).
 
 jogador('Rice').
 selecao('Rice', inglaterra).
-posicao(defensor).
+posicao('Rice', defensor).
 clube('Rice', westHam).
 idade('Rice', 23).
 golsCopa('Rice', 0).
@@ -191,7 +191,7 @@ assistenciaCopa('Phoden', 2).
 
 jogador('Kane').
 selecao('Kane', inglaterra).
-posicao(atacante).
+posicao('Kane', atacante).
 clube('Kane', tottenham).
 idade('Kane', 29).
 golsCopa('Kane', 2).
