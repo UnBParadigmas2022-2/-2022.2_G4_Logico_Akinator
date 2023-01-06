@@ -886,78 +886,6 @@ jogador('Suárez',uruguai,atacante,gremio,35,0,1).
 jogador('Cavani',uruguai,atacante,valencia,35,0,0).
 jogador('DarwinNúñez',uruguai,liverpool,ajax,23,0,0).
 
-selecao('Rochet', uruguai).
-posicao('Rochet', goleiro).
-clube('Rochet', nacional).
-idade('Rochet', 29).
-golsCopa('Rochet', 0).
-assistenciaCopa('Rochet', 0).
-
-selecao('Giménez', uruguai).
-posicao('Giménez', defensor).
-clube('Giménez', atleticoDeMadrid).
-idade('Giménez', 27).
-golsCopa('Giménez', 0).
-assistenciaCopa('Giménez', 0).
-
-selecao('Varela', uruguai).
-posicao('Varela', defensor).
-clube('Varela', flamengo).
-idade('Varela', 29).
-golsCopa('Varela', 0).
-assistenciaCopa('Varela', 0).
-
-selecao('Bentancur', uruguai).
-posicao('Bentancur', meia).
-clube('Bentancur', tottenham).
-idade('Bentancur', 25).
-golsCopa('Bentancur', 0).
-assistenciaCopa('Bentancur', 0).
-
-selecao('delaCruz', uruguai).
-posicao('delaCruz', meia).
-clube('delaCruz', riverplate).
-idade('delaCruz', 25).
-golsCopa('delaCruz', 0).
-assistenciaCopa('delaCruz', 0).
-
-selecao('Pellistri', uruguai).
-posicao('Pellistri', meia).
-clube('Pellistri', manchesterUnited).
-idade('Pellistri', 21).
-golsCopa('Pellistri', 1).
-assistenciaCopa('Pellistri', 0).
-
-selecao('deArrascaeta', uruguai).
-posicao('deArrascaeta', meia).
-clube('deArrascaeta', flamengo).
-idade('deArrascaeta', 28).
-golsCopa('deArrascaeta', 2).
-assistenciaCopa('deArrascaeta', 0).
-
-selecao('Suárez', uruguai).
-posicao('Suárez', atacante).
-clube('Suárez', gremio).
-idade('Suárez', 35).
-golsCopa('Suárez', 0).
-assistenciaCopa('Suárez', 1).
-
-selecao('Cavani', uruguai).
-posicao('Cavani', atacante).
-clube('Cavani', valencia).
-idade('Cavani', 35).
-golsCopa('Cavani', 0).
-assistenciaCopa('Cavani', 0).
-
-selecao('DarwinNúñez', uruguai).
-posicao('DarwinNúñez', atacante).
-clube('DarwinNúñez', valencia).
-idade('DarwinNúñez', 23).
-golsCopa('DarwinNúñez', 0).
-assistenciaCopa('DarwinNúñez', 0).
-
-
-
 %% Selecao Ganesa
 
 jogador('AtiZigi',gana,goleiro,stGallen,26,0,0).
@@ -971,6 +899,370 @@ jogador('AbdulSamed',gana,meia,lens,22,0,0).
 jogador('JordanAyew',gana,atacante,crystalPalace,31,0,1).
 jogador('AndréAyew',gana,atacante,alSadd,33,1,0).
 jogador('Bukari',gana,atacante,redStar,24,1,0).
+
+%% Selecao Senegalesa
+
+jogador('Mendy',senegal,goleiro,chelsea,30,0,0).
+jogador('Koulibaly',senegal,defensor,chelsea,31,1,0).
+jogador('Cisse',senegal,defensor,olympiacos,27,0,0).
+jogador('Jakobs',senegal,defensor,monaco,23,0,1).
+jogador('Sabaly',senegal,defensor,realBetis,29,0,0).
+jogador('Gueye',senegal,meia,everton,33,0,0).
+jogador('Ciss',senegal,meia,rayoVallecano,28,0,0).
+jogador('Ndiaye',senegal,meia,sheffieldUnited,22,0,1).
+jogador('Dia',senegal,atacante,salernitana,26,1,0).
+jogador('Diatta',senegal,atacante,monaco,23,0,0).
+jogador('Sarr',senegal,atacante,watford,24,1,0).
+
+selecao('Mendy', senegal).
+posicao('Mendy',goleiro).
+clube('Mendy',chelsea).
+idade('Mendy',30).
+golsCopa('Mendy',0).
+assistenciaCopa('Mendy',0).
+
+selecao('Koulibaly', senegal).
+posicao('Koulibaly',defensor).
+clube('Koulibaly',chelsea).
+idade('Koulibaly',31).
+golsCopa('Koulibaly',1).
+assistenciaCopa('Koulibaly',0).
+
+selecao('Cisse', senegal).
+posicao('Cisse',defensor).
+clube('Cisse',olympiacos).
+idade('Cisse',27).
+golsCopa('Cisse',0).
+assistenciaCopa('Cisse',0).
+
+selecao('Jakobs', senegal).
+posicao('Jakobs',defensor).
+clube('Jakobs',monaco).
+idade('Jakobs',23).
+golsCopa('Jakobs',0).
+assistenciaCopa('Jakobs',1).
+
+selecao('Sabaly', senegal).
+posicao('Sabaly',defensor).
+clube('Sabaly',realBetis).
+idade('Sabaly',29).
+golsCopa('Sabaly',0).
+assistenciaCopa('Sabaly',0).
+
+selecao('Gueye', senegal).
+posicao('Gueye',meia).
+clube('Gueye',everton).
+idade('Gueye',33).
+golsCopa('Gueye',0).
+assistenciaCopa('Gueye',0).
+
+selecao('Ciss', senegal).
+posicao('Ciss',meia).
+clube('Ciss',rayoVallecano).
+idade('Ciss',28).
+golsCopa('Ciss',0).
+assistenciaCopa('Ciss',0).
+
+selecao('Ndiaye', senegal).
+posicao('Ndiaye',meia).
+clube('Ndiaye',sheffieldUnited).
+idade('Ndiaye',22).
+golsCopa('Ndiaye',0).
+assistenciaCopa('Ndiaye',1).
+
+selecao('Dia', senegal).
+posicao('Dia',atacante).
+clube('Dia',salernitana).
+idade('Dia',26).
+golsCopa('Dia',1).
+assistenciaCopa('Dia',0).
+
+selecao('Diatta', senegal).
+posicao('Diatta',atacante).
+clube('Diatta',monaco).
+idade('Diatta',23).
+golsCopa('Diatta',0).
+assistenciaCopa('Diatta',0).
+
+selecao('Sarr', senegal).
+posicao('Sarr',atacante).
+clube('Sarr',watford).
+idade('Sarr',24).
+golsCopa('Sarr',1).
+assistenciaCopa('Sarr',0).
+
+%% Selecao Equatoriana
+
+jogador('Galindez',equador,goleiro,aucas,35,0,0).
+jogador('Torres',equador,defensor,santos,25,0,2).
+jogador('Hincapie',equador,defensor,bayerLeverkusen,20,0,0).
+jogador('Estupinan',equador,defensor,brighton,24,0,0).
+jogador('Preciado',equador,defensor,racingGenk,24,0,1).
+jogador('Cifuentes',equador,meia,lafc,23,0,0).
+jogador('Ibarra',equador,meia,pachuca,28,0,0).
+jogador('Franco',equador,meia,talleres,24,0,0).
+jogador('Estrada',equador,atacante,cruzAzul,26,0,0).
+jogador('Valencia',equador,atacante,fenerbahce,33,3,0).
+jogador('Sarmiento',equador,atacante,brighton,20,0,0).
+
+selecao('Galindez', equador).
+posicao('Galindez',goleiro).
+clube('Galindez',aucas).
+idade('Galindez',35).
+golsCopa('Galindez',0).
+assistenciaCopa('Galindez',0).
+
+selecao('Torres', equador).
+posicao('Torres',defensor).
+clube('Torres',santos).
+idade('Torres',25).
+golsCopa('Torres',0).
+assistenciaCopa('Torres',2).
+
+selecao('Hincapie', equador).
+posicao('Hincapie',defensor).
+clube('Hincapie',bayerLeverkusen).
+idade('Hincapie',20).
+golsCopa('Hincapie',0).
+assistenciaCopa('Hincapie',0).
+
+selecao('Estupinan', equador).
+posicao('Estupinan',defensor).
+clube('Estupinan',brighton).
+idade('Estupinan',24).
+golsCopa('Estupinan',0).
+assistenciaCopa('Estupinan',0).
+
+selecao('Preciado', equador).
+posicao('Preciado',defensor).
+clube('Preciado',racingGenk).
+idade('Preciado',24).
+golsCopa('Preciado',0).
+assistenciaCopa('Preciado',1).
+
+selecao('Cifuentes', equador).
+posicao('Cifuentes',meia).
+clube('Cifuentes',lafc).
+idade('Cifuentes',23).
+golsCopa('Cifuentes',0).
+assistenciaCopa('Cifuentes',0).
+
+selecao('Ibarra', equador).
+posicao('Ibarra',meia).
+clube('Ibarra',pachuca).
+idade('Ibarra',28).
+golsCopa('Ibarra',0).
+assistenciaCopa('Ibarra',0).
+
+selecao('Franco', equador).
+posicao('Franco',meia).
+clube('Franco',talleres).
+idade('Franco',24).
+golsCopa('Franco',0).
+assistenciaCopa('Franco',0).
+
+selecao('Estrada', equador).
+posicao('Estrada',atacante).
+clube('Estrada',cruzAzul).
+idade('Estrada',26).
+golsCopa('Estrada',0).
+assistenciaCopa('Estrada',0).
+
+selecao('Valencia', equador).
+posicao('Valencia',atacante).
+clube('Valencia',fenerbahce).
+idade('Valencia',33).
+golsCopa('Valencia',3).
+assistenciaCopa('Valencia',0).
+
+selecao('Sarmiento', equador).
+posicao('Sarmiento',atacante).
+clube('Sarmiento',brighton).
+idade('Sarmiento',20).
+golsCopa('Sarmiento',0).
+assistenciaCopa('Sarmiento',0).
+
+%% Selecao Catari
+
+jogador('Barsham',catar,goleiro,alSadd,24,0,0).
+jogador('Miguel',catar,defensor,alSadd,32,0,0).
+jogador('Hassan',catar,defensor,alSadd,29,0,0).
+jogador('Ahmed',catar,defensor,alGharafa,23,0,0).
+jogador('Khoukhi',catar,defensor,alSadd,32,0,0).
+jogador('Waad',catar,meia,alSadd,23,0,0).
+jogador('Hatem',catar,meia,alRayyan,32,0,0).
+jogador('Madibo',catar,meia,alDuhail,26,0,0).
+jogador('Muntari',catar,atacante,alDuhail,29,1,0).
+jogador('Afif',catar,atacante,alSadd,26,0,0).
+jogador('Ali',catar,atacante,alDuhail,26,0,0).
+
+selecao('Barsham', catar).
+posicao('Barsham',goleiro).
+clube('Barsham',alSadd).
+idade('Barsham',24).
+golsCopa('Barsham',0).
+assistenciaCopa('Barsham',0).
+
+selecao('Miguel', catar).
+posicao('Miguel',defensor).
+clube('Miguel',alSadd).
+idade('Miguel',32).
+golsCopa('Miguel',0).
+assistenciaCopa('Miguel',0).
+
+selecao('Hassan', catar).
+posicao('Hassan',defensor).
+clube('Hassan',alSadd).
+idade('Hassan',29).
+golsCopa('Hassan',0).
+assistenciaCopa('Hassan',0).
+
+selecao('Ahmed', catar).
+posicao('Ahmed',defensor).
+clube('Ahmed',alGharafa).
+idade('Ahmed',23).
+golsCopa('Ahmed',0).
+assistenciaCopa('Ahmed',0).
+
+selecao('Khoukhi', catar).
+posicao('Khoukhi',defensor).
+clube('Khoukhi',alSadd).
+idade('Khoukhi',32).
+golsCopa('Khoukhi',0).
+assistenciaCopa('Khoukhi',0).
+
+selecao('Waad', catar).
+posicao('Waad',meia).
+clube('Waad',alSadd).
+idade('Waad',23).
+golsCopa('Waad',0).
+assistenciaCopa('Waad',0).
+
+selecao('Hatem', catar).
+posicao('Hatem',meia).
+clube('Hatem',alRayyan).
+idade('Hatem',32).
+golsCopa('Hatem',0).
+assistenciaCopa('Hatem',0).
+
+selecao('Madibo', catar).
+posicao('Madibo',meia).
+clube('Madibo',alDuhail).
+idade('Madibo',26).
+golsCopa('Madibo',0).
+assistenciaCopa('Madibo',0).
+
+selecao('Muntari', catar).
+posicao('Muntari',atacante).
+clube('Muntari',alDuhail).
+idade('Muntari',29).
+golsCopa('Muntari',1).
+assistenciaCopa('Muntari',0).
+
+selecao('Afif', catar).
+posicao('Afif',atacante).
+clube('Afif',alSadd).
+idade('Afif',26).
+golsCopa('Afif',0).
+assistenciaCopa('Afif',0).
+
+selecao('Ali', catar).
+posicao('Ali',atacante).
+clube('Ali',alDuhail).
+idade('Ali',26).
+golsCopa('Ali',0).
+assistenciaCopa('Ali',0).
+
+%% Selecao Estadunidense
+
+jogador('Turner',estadosUnidos,goleiro,arsenal,28,0,0).
+jogador('Dest',estadosUnidos,defensor,milan,22,0,1).
+jogador('Zimmerman',estadosUnidos,defensor,nashvilleSC,29,0,0).
+jogador('Robinson',estadosUnidos,defensor,fulham,25,0,0).
+jogador('Ream',estadosUnidos,defensor,fulham,35,0,0).
+jogador('Adams',estadosUnidos,meia,leedsUnited,23,0,0).
+jogador('Musah',estadosUnidos,meia,valencia,20,0,0).
+jogador('Pulisic',estadosUnidos,meia,chelsea,24,1,2).
+jogador('Ferreira',estadosUnidos,atacante,fcDallas,22,0,0).
+jogador('Wright',estadosUnidos,atacante,antalyaspor,24,1,0).
+jogador('Weah',estadosUnidos,atacante,lille,22,1,0).
+
+selecao('Turner', estadosUnidos).
+posicao('Turner',goleiro).
+clube('Turner',arsenal).
+idade('Turner',28).
+golsCopa('Turner',0).
+assistenciaCopa('Turner',0).
+
+selecao('Dest', estadosUnidos).
+posicao('Dest',defensor).
+clube('Dest',milan).
+idade('Dest',22).
+golsCopa('Dest',0).
+assistenciaCopa('Dest',1).
+
+selecao('Zimmerman', estadosUnidos).
+posicao('Zimmerman',defensor).
+clube('Zimmerman',nashvilleSC).
+idade('Zimmerman',29).
+golsCopa('Zimmerman',0).
+assistenciaCopa('Zimmerman',0).
+
+selecao('Robinson', estadosUnidos).
+posicao('Robinson',defensor).
+clube('Robinson',fulham).
+idade('Robinson',25).
+golsCopa('Robinson',0).
+assistenciaCopa('Robinson',0).
+
+selecao('Ream', estadosUnidos).
+posicao('Ream',defensor).
+clube('Ream',fulham).
+idade('Ream',35).
+golsCopa('Ream',0).
+assistenciaCopa('Ream',0).
+
+selecao('Adams', estadosUnidos).
+posicao('Adams',meia).
+clube('Adams',leedsUnited).
+idade('Adams',23).
+golsCopa('Adams',0).
+assistenciaCopa('Adams',0).
+
+selecao('Musah', estadosUnidos).
+posicao('Musah',meia).
+clube('Musah',valencia).
+idade('Musah',20).
+golsCopa('Musah',0).
+assistenciaCopa('Musah',0).
+
+selecao('Pulisic', estadosUnidos).
+posicao('Pulisic',meia).
+clube('Pulisic',chelsea).
+idade('Pulisic',24).
+golsCopa('Pulisic',1).
+assistenciaCopa('Pulisic',2).
+
+selecao('Ferreira', estadosUnidos).
+posicao('Ferreira',atacante).
+clube('Ferreira',fcDallas).
+idade('Ferreira',22).
+golsCopa('Ferreira',0).
+assistenciaCopa('Ferreira',0).
+
+selecao('Wright', estadosUnidos).
+posicao('Wright',atacante).
+clube('Wright',antalyaspor).
+idade('Wright',24).
+golsCopa('Wright',1).
+assistenciaCopa('Wright',0).
+
+selecao('Weah', estadosUnidos).
+posicao('Weah',atacante).
+clube('Weah',lille).
+idade('Weah',22).
+golsCopa('Weah',1).
+assistenciaCopa('Weah',0).
 
 selecao('AtiZigi', gana).
 posicao('AtiZigi', goleiro).
