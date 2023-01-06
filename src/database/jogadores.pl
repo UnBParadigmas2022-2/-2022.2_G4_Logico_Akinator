@@ -886,6 +886,78 @@ jogador('Suárez',uruguai,atacante,gremio,35,0,1).
 jogador('Cavani',uruguai,atacante,valencia,35,0,0).
 jogador('DarwinNúñez',uruguai,liverpool,ajax,23,0,0).
 
+selecao('Rochet', uruguai).
+posicao('Rochet', goleiro).
+clube('Rochet', nacional).
+idade('Rochet', 29).
+golsCopa('Rochet', 0).
+assistenciaCopa('Rochet', 0).
+
+selecao('Giménez', uruguai).
+posicao('Giménez', defensor).
+clube('Giménez', atleticoDeMadrid).
+idade('Giménez', 27).
+golsCopa('Giménez', 0).
+assistenciaCopa('Giménez', 0).
+
+selecao('Varela', uruguai).
+posicao('Varela', defensor).
+clube('Varela', flamengo).
+idade('Varela', 29).
+golsCopa('Varela', 0).
+assistenciaCopa('Varela', 0).
+
+selecao('Bentancur', uruguai).
+posicao('Bentancur', meia).
+clube('Bentancur', tottenham).
+idade('Bentancur', 25).
+golsCopa('Bentancur', 0).
+assistenciaCopa('Bentancur', 0).
+
+selecao('delaCruz', uruguai).
+posicao('delaCruz', meia).
+clube('delaCruz', riverplate).
+idade('delaCruz', 25).
+golsCopa('delaCruz', 0).
+assistenciaCopa('delaCruz', 0).
+
+selecao('Pellistri', uruguai).
+posicao('Pellistri', meia).
+clube('Pellistri', manchesterUnited).
+idade('Pellistri', 21).
+golsCopa('Pellistri', 1).
+assistenciaCopa('Pellistri', 0).
+
+selecao('deArrascaeta', uruguai).
+posicao('deArrascaeta', meia).
+clube('deArrascaeta', flamengo).
+idade('deArrascaeta', 28).
+golsCopa('deArrascaeta', 2).
+assistenciaCopa('deArrascaeta', 0).
+
+selecao('Suárez', uruguai).
+posicao('Suárez', atacante).
+clube('Suárez', gremio).
+idade('Suárez', 35).
+golsCopa('Suárez', 0).
+assistenciaCopa('Suárez', 1).
+
+selecao('Cavani', uruguai).
+posicao('Cavani', atacante).
+clube('Cavani', valencia).
+idade('Cavani', 35).
+golsCopa('Cavani', 0).
+assistenciaCopa('Cavani', 0).
+
+selecao('DarwinNúñez', uruguai).
+posicao('DarwinNúñez', atacante).
+clube('DarwinNúñez', valencia).
+idade('DarwinNúñez', 23).
+golsCopa('DarwinNúñez', 0).
+assistenciaCopa('DarwinNúñez', 0).
+
+
+
 %% Selecao Ganesa
 
 jogador('AtiZigi',gana,goleiro,stGallen,26,0,0).
@@ -899,3 +971,80 @@ jogador('AbdulSamed',gana,meia,lens,22,0,0).
 jogador('JordanAyew',gana,atacante,crystalPalace,31,0,1).
 jogador('AndréAyew',gana,atacante,alSadd,33,1,0).
 jogador('Bukari',gana,atacante,redStar,24,1,0).
+
+selecao('AtiZigi', gana).
+posicao('AtiZigi', goleiro).
+clube('AtiZigi', stGallen).
+idade('AtiZigi', 26).
+golsCopa('AtiZigi', 0).
+assistenciaCopa('AtiZigi', 0).
+
+selecao('Lamptey', gana).
+posicao('Lamptey', defensor).
+clube('Lamptey', brighton).
+idade('Lamptey', 22).
+golsCopa('Lamptey', 0).
+assistenciaCopa('Lamptey', 0).
+
+selecao('Salisu', gana).
+posicao('Salisu', defensor).
+clube('Salisu', southampton).
+idade('Salisu', 23).
+golsCopa('Salisu', 1).
+assistenciaCopa('Salisu', 0).
+
+selecao('RahmanBaba', gana).
+posicao('RahmanBaba', defensor).
+clube('RahmanBaba', reading).
+idade('RahmanBaba', 28).
+golsCopa('RahmanBaba', 0).
+assistenciaCopa('RahmanBaba', 0).
+
+selecao('Amartey', gana).
+posicao('Amartey', defensor).
+clube('Amartey', leicester).
+idade('Amartey', 28).
+golsCopa('Amartey', 0).
+assistenciaCopa('Amartey', 0).
+
+selecao('Partey', gana).
+posicao('Partey', meia).
+clube('Partey', arsenal).
+idade('Partey', 29).
+golsCopa('Partey', 0).
+assistenciaCopa('Partey', 0).
+
+selecao('Kudus', gana).
+posicao('Kudus', meia).
+clube('Kudus', ajax).
+idade('Kudus', 26).
+golsCopa('Kudus', 2).
+assistenciaCopa('Kudus', 0).
+
+selecao('AbdulSamed', gana).
+posicao('AbdulSamed', meia).
+clube('AbdulSamed', lens).
+idade('AbdulSamed', 22).
+golsCopa('AbdulSamed', 0).
+assistenciaCopa('AbdulSamed', 0).
+
+selecao('JordanAyew', gana).
+posicao('JordanAyew', atacante).
+clube('JordanAyew', crystalPalace).
+idade('JordanAyew', 31).
+golsCopa('JordanAyew', 0).
+assistenciaCopa('JordanAyew', 1).
+
+selecao('AndréAyew', gana).
+posicao('AndréAyew', atacante).
+clube('AndréAyew', alSadd).
+idade('AndréAyew', 33).
+golsCopa('AndréAyew', 1).
+assistenciaCopa('AndréAyew', 0).
+
+selecao('Bukari', gana).
+posicao('Bukari', atacante).
+clube('Bukari', redStar).
+idade('Bukari', 24).
+golsCopa('Bukari', 1).
+assistenciaCopa('Bukari', 0).
