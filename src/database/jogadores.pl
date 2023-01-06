@@ -18,7 +18,7 @@ golsCopa('Noppert',0).
 assistenciaCopa('Noppert',0).
 
 jogador('Dumfries').
-selecao('Noppert', holanda).
+selecao('Dumfries', holanda).
 posicao('Dumfries',defensor).
 clube('Dumfries',inter).
 idade('Dumfries',26).
@@ -26,7 +26,7 @@ golsCopa('Dumfries',1).
 assistenciaCopa('Dumfries',2).
 
 jogador('VanDijk').
-selecao('Noppert', holanda).
+selecao('VanDijk', holanda).
 posicao('VanDijk',defensor).
 clube('VanDijk',liverpool).
 idade('VanDijk',31).
@@ -34,7 +34,7 @@ golsCopa('VanDijk',0).
 assistenciaCopa('VanDijk',0).
 
 jogador('Blind').
-selecao('Noppert', holanda).
+selecao('Blind', holanda).
 posicao('Blind',defensor).
 clube('Blind',ajax).
 idade('Blind',32).
@@ -42,7 +42,7 @@ golsCopa('Blind',1).
 assistenciaCopa('Blind',1).
 
 jogador('Ake').
-selecao('Noppert', holanda).
+selecao('Ake', holanda).
 posicao('Ake',defensor).
 clube('Ake',manchesterCity).
 idade('Ake',27).
@@ -50,7 +50,7 @@ golsCopa('Ake',0).
 assistenciaCopa('Ake',0).
 
 jogador('Roon').
-selecao('Noppert', holanda).
+selecao('Roon', holanda).
 posicao('Roon',meia).
 clube('Roon',atalanta).
 idade('Roon',31).
@@ -58,7 +58,7 @@ golsCopa('Roon',1).
 assistenciaCopa('Roon',1).
 
 jogador('DeJong').
-selecao('Noppert', holanda).
+selecao('DeJong', holanda).
 posicao('DeJong',meia).
 clube('DeJong',barcelona).
 idade('DeJong',25).
@@ -66,7 +66,7 @@ golsCopa('DeJong',1).
 assistenciaCopa('DeJong',1).
 
 jogador('Klaassen').
-selecao('Noppert', holanda).
+selecao('Klaassen', holanda).
 posicao('Klaassen',meia).
 clube('Klaassen',ajax).
 idade('Klaassen',29).
@@ -74,7 +74,7 @@ golsCopa('Klaassen',1).
 assistenciaCopa('Klaassen',2).
 
 jogador('Koopmeiners').
-selecao('Noppert', holanda).
+selecao('Koopmeiners', holanda).
 posicao('Koopmeiners',atacante).
 clube('Koopmeiners',atalanta).
 idade('Koopmeiners',24).
@@ -82,7 +82,7 @@ golsCopa('Koopmeiners',0).
 assistenciaCopa('Koopmeiners',1).
 
 jogador('Gakpo').
-selecao('Noppert', holanda).
+selecao('Gakpo', holanda).
 posicao('Gakpo',atacante).
 clube('Gakpo',psv).
 idade('Gakpo',23).
@@ -90,7 +90,7 @@ golsCopa('Gakpo',3).
 assistenciaCopa('Gakpo',0).
 
 jogador('Depay').
-selecao('Noppert', holanda).
+selecao('Depay', holanda).
 posicao('Depay',atacante).
 clube('Depay',barcelona).
 idade('Depay',28).
@@ -100,45 +100,276 @@ assistenciaCopa('Depay',0).
 
 %% Selecao Inglesa
 
-jogador('Pickford',inglaterra,goleiro,everton,28,0,0).
-jogador('Maguire',inglaterra,defensor,manchesterUnited,29,0,1).
-jogador('Stones',inglaterra,defensor,manchesterCity,28,0,0).
-jogador('Shaw',inglaterra,defensor,manchesterUnited,27,0,1).
-jogador('Rice',inglaterra,defensor,westHam,23,0,0).
-jogador('Bellingham',inglaterra,meia,borussiaDortmund,19,1,1).
-jogador('Grealish',inglaterra,meia,manchesterCity,27,1,0).
-jogador('Saka',inglaterra,meia,arsenal,21,3,0).
-jogador('Phoden',inglaterra,atacante,manchesterCity,22,1,2).
-jogador('Kane',inglaterra,atacante,tottenham,29,2,3).
-jogador('Rashford',inglaterra,atacante,manchesterUnited,25,3,0).
+jogador('Pickford').
+selecao('Pickford', inglaterra).
+posicao('Pickford', goleiro).
+clube('Pickford', everton).
+idade('Pickford', 28).
+golsCopa('Pickford', 0).
+assistenciaCopa('Pickford', 0).
+
+jogador('Maguire').
+selecao('Maguire', inglaterra).
+posicao('Maguire', defensor).
+clube('Maguire', manchesterUnited).
+idade('Maguire', 29).
+golsCopa('Maguire', 0).
+assistenciaCopa('Maguire', 1).
+
+jogador('Stones').
+selecao('Stones', inglaterra).
+posicao('Stones', defensor).
+clube('Stones', manchesterCity).
+idade('Stones', 28).
+golsCopa('Stones', 0).
+assistenciaCopa('Stones', 0).
+
+jogador('Shaw').
+selecao('Shaw', inglaterra).
+'Shaw', posicao(defensor).
+clube('Shaw', manchesterUnited).
+idade('Shaw', 27).
+golsCopa('Shaw', 0).
+assistenciaCopa('Shaw', 1).
+
+jogador('Rice').
+selecao('Rice', inglaterra).
+'Rice', posicao(defensor).
+clube('Rice', westHam).
+idade('Rice', 23).
+golsCopa('Rice', 0).
+assistenciaCopa('Rice', 0).
+
+jogador('Bellingham').
+selecao('Bellingham', inglaterra).
+posicao('Bellingham', meia).
+clube('Bellingham', borussiaDortmund).
+idade('Bellingham', 19).
+golsCopa('Bellingham', 1).
+assistenciaCopa('Bellingham', 1).
+
+jogador('Grealish').
+selecao('Grealish', inglaterra).
+posicao('Grealish', meia).
+clube('Grealish', manchesterCity).
+idade('Grealish', 27).
+golsCopa('Grealish', 1).
+assistenciaCopa('Grealish', 0).
+
+jogador('Saka').
+selecao('Saka', inglaterra).
+posicao('Saka', meia).
+clube('Saka', arsenal).
+idade('Saka', 21).
+golsCopa('Saka', 3).
+assistenciaCopa('Saka', 0).
+
+jogador('Phoden').
+selecao('Phoden', inglaterra).
+posicao('Phoden', atacante).
+clube('Phoden', manchesterCity).
+idade('Phoden', 22).
+golsCopa('Phoden', 1).
+assistenciaCopa('Phoden', 2).
+
+jogador('Kane').
+selecao('Kane', inglaterra).
+'Kane', posicao(atacante).
+clube('Kane', tottenham).
+idade('Kane', 29).
+golsCopa('Kane', 2).
+assistenciaCopa('Kane', 3).
+
+jogador('Rashford').
+selecao('Rashford', inglaterra).
+posicao('Rashford', atacante).
+clube('Rashford', manchesterUnited).
+idade('Rashford', 25).
+golsCopa('Rashford', 3).
+assistenciaCopa('Rashford', 0).
+
 
 %% Selecao Argentina
 
-jogador('Martinez',argentina,goleiro,astonVilla,30,0,0).
-jogador('Tagliafico',argentina,defensor,lyon,30,0,0).
-jogador('Otamendi',argentina,defensor,benfica,34,0,0).
-jogador('Romero',argentina,defensor,tottenham,24,0,0).
-jogador('Molina',argentina,defensor,atleticoDeMadrid,24,1,1).
-jogador('DePaul',argentina,meia,atleticoDeMadrid,28,0,0).
-jogador('EnzoFernandez',argentina,meia,benfica,21,1,1).
-jogador('Paredes',argentina,meia,juventus,28,0,0).
-jogador('DiMaria',argentina,atacante,juventus,34,1,1).
-jogador('Messi',argentina,atacante,psg,35,7,3).
-jogador('Alvarez',argentina,atacante,manchesterCity,22,4,0).
+jogador('Martinez').
+selecao('Martinez', argentina).
+posicao('Martinez', goleiro).
+clube('Martinez', astonVilla).
+idade('Martinez', 30).
+golsCopa('Martinez', 0).
+assistenciaCopa('Martinez', 0).
+
+jogador('Tagliafico').
+selecao('Tagliafico', argentina).
+posicao('Tagliafico', defensor).
+clube('Tagliafico', lyon).
+idade('Tagliafico', 30).
+golsCopa('Tagliafico', 0).
+assistenciaCopa('Tagliafico', 0).
+
+jogador('Otamendi').
+selecao('Otamendi', argentina).
+posicao('Otamendi', defensor).
+clube('Otamendi', benfica).
+idade('Otamendi', 34).
+golsCopa('Otamendi', 0).
+assistenciaCopa('Otamendi', 0).
+
+jogador('Romero').
+selecao('Romero', argentina).
+posicao('Romero', defensor).
+clube('Romero', tottenham).
+idade('Romero', 24).
+golsCopa('Romero', 0).
+assistenciaCopa('Romero', 0).
+
+jogador('Molina').
+selecao('Molina', argentina).
+posicao('Molina', defensor).
+clube('Molina', atleticoDeMadrid).
+idade('Molina', 24).
+golsCopa('Molina', 1).
+assistenciaCopa('Molina', 1).
+
+jogador('DePaul').
+selecao('DePaul', argentina).
+posicao('DePaul', meia).
+clube('DePaul', atleticoDeMadrid).
+idade('DePaul', 28).
+golsCopa('DePaul', 0).
+assistenciaCopa('DePaul', 0).
+
+jogador('EnzoFernandez').
+selecao('EnzoFernandez', argentina).
+posicao('EnzoFernandez', meia).
+clube('EnzoFernandez', 21).
+idade('EnzoFernandez', 1).
+golsCopa('EnzoFernandez', 1).
+assistenciaCopa('EnzoFernandez', 0).
+
+jogador('Paredes').
+selecao('Paredes', argentina).
+posicao('Paredes', meia).
+clube('Paredes', juventus).
+idade('Paredes', 28).
+golsCopa('Paredes', 0).
+assistenciaCopa('Paredes', 0).
+
+jogador('DiMaria').
+selecao('DiMaria', argentina).
+posicao('DiMaria', atacante).
+clube('DiMaria', juventus).
+idade('DiMaria', 34).
+golsCopa('DiMaria', 1).
+assistenciaCopa('DiMaria', 1).
+
+jogador('Messi').
+selecao('Messi', argentina).
+posicao('Messi', atacante).
+clube('Messi', psg).
+idade('Messi', 35).
+golsCopa('Messi', 7).
+assistenciaCopa('Messi', 3).
+
+jogador('Alvarez').
+selecao('Alvarez', argentina).
+posicao('Alvarez', atacante).
+clube('Alvarez', manchesterCity).
+idade('Alvarez', 22).
+golsCopa('Alvarez', 4).
+assistenciaCopa('Alvarez', 0).
+
 
 %% Selecao Francesa
 
-jogador('Lloris',franca,goleiro,tottenham,36,0,0).
-jogador('Varane',franca,defensor,manchesterUnited,29,0,0).
-jogador('Kounde',franca,defensor,barcelona,28,0,0).
-jogador('TheoHernandez',franca,defensor,milan,25,1,2).
-jogador('Fofana',franca,meia,chelsea,23,0,0).
-jogador('Rabiot',franca,meia,juventus,27,1,1).
-jogador('Tchouameni',franca,meia,realMadrid,22,1,0).
-jogador('Griezmann',franca,atacante,atleticoDeMadrid,31,0,3).
-jogador('Dembele',franca,atacante,barcelona,25,0,2).
-jogador('Mbappe',franca,atacante,psg,24,8,2).
-jogador('Giroud',franca,atacante,milan,36,4,0).
+jogador('Lloris').
+selecao('Lloris', franca).
+posicao('Lloris', goleiro).
+clube('Lloris', tottenham).
+idade('Lloris', 36).
+golsCopa('Lloris', 0).
+assistenciaCopa('Lloris', 0).
+
+jogador('Varane').
+selecao('Varane', franca).
+posicao('Varane', defensor).
+clube('Varane', manchesterUnited).
+idade('Varane', 29).
+golsCopa('Varane', 0).
+assistenciaCopa('Varane', 0).
+
+jogador('Kounde').
+selecao('Kounde', franca).
+posicao('Kounde', defensor).
+clube('Kounde', barcelona).
+idade('Kounde', 28).
+golsCopa('Kounde', 0).
+assistenciaCopa('Kounde', 0).
+
+jogador('TheoHernandez').
+selecao('TheoHernandez', franca).
+posicao('TheoHernandez', defensor).
+clube('TheoHernandez', milan).
+idade('TheoHernandez', 25).
+golsCopa('TheoHernandez', 1).
+assistenciaCopa('TheoHernandez', 2).
+
+jogador('Fofana').
+selecao('Fofana', franca).
+posicao('Fofana', meia).
+clube('Fofana', chelsea).
+idade('Fofana', 23).
+golsCopa('Fofana', 0).
+assistenciaCopa('Fofana', 0).
+
+jogador('Rabiot').
+selecao('Rabiot', franca).
+posicao('Rabiot', meia).
+clube('Rabiot', juventus).
+idade('Rabiot', 27).
+golsCopa('Rabiot', 1).
+assistenciaCopa('Rabiot', 1).
+
+jogador('Tchouameni').
+selecao('Tchouameni', franca).
+posicao('Tchouameni', meia).
+clube('Tchouameni', realMadrid).
+idade('Tchouameni', 22).
+golsCopa('Tchouameni', 1).
+assistenciaCopa('Tchouameni', 0).
+
+jogador('Griezmann').
+selecao('Griezmann', franca).
+posicao('Griezmann', atacante).
+clube('Griezmann', atleticoDeMadrid).
+idade('Griezmann', 31).
+golsCopa('Griezmann', 0).
+assistenciaCopa('Griezmann', 3).
+
+jogador('Dembele').
+selecao('Dembele', franca).
+posicao('Dembele', atacante).
+clube('Dembele', barcelona).
+idade('Dembele', 25).
+golsCopa('Dembele', 0).
+assistenciaCopa('Dembele', 2).
+
+jogador('Mbappe').
+selecao('Mbappe', franca).
+posicao('Mbappe', atacante).
+clube('Mbappe', psg).
+idade('Mbappe', 24).
+golsCopa('Mbappe', 8).
+assistenciaCopa('Mbappe', 2).
+
+jogador('Giroud').
+selecao('Giroud', franca).
+posicao('Giroud', atacante).
+clube('Giroud', milan).
+idade('Giroud', 36).
+golsCopa('Giroud', 4).
+assistenciaCopa('Giroud', 0).
+
 
 %% Selecao Espanhola
 
