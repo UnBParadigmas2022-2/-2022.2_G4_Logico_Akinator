@@ -17,9 +17,11 @@ limpa(Topico, FatoDoJogador) :-
     retract(continente(FatoDoJogador)),
 	limparPaises(ListaDePais), !.
 
-continente(europa).
+continente(africa).
 continente(america).
 continente(asia).
+continente(europa).
+continente(oceania).
 
 limpa(Topico, FatoDoJogador) :-
 	Topico == 'selecao',
@@ -27,17 +29,41 @@ limpa(Topico, FatoDoJogador) :-
 	findall(Choice, jogador(Choice, FatoDoJogador, _, _, _, _, _), ListaDeJogadores),
 	limpaJogadores(ListaDeJogadores), !.
 
-pais(europa, holanda).
-pais(europa, inglaterra).
-pais(europa, franca).
-pais(europa, espanha).
-pais(europa, belgica).
-pais(europa, portugal).
-pais(europa, alemanha).
-pais(europa, italia).
-pais(europa, turquia).
+pais(africa, camaroes).
+pais(africa, gana).
+pais(africa, marrocos).
+pais(africa, senegal).
+pais(africa, tunisia).
 
-pais(america, brasil).
 pais(america, argentina).
+pais(america, brasil).
+pais(america, canada).
+pais(america, costaRica).
+pais(america, equador).
+pais(america, estadosUnidos).
+pais(america, mexico).
+pais(america, uruguai).
 
 pais(asia, arabia).
+pais(asia, coreiaDoSul).
+pais(asia, ira).
+pais(asia, japao)
+pais(asia, qatar).
+
+pais(europa, alemanha).
+pais(europa, belgica).
+pais(europa, croacia).
+pais(europa, dinamarca).
+pais(europa, espanha).
+pais(europa, franca).
+pais(europa, holanda).
+pais(europa, inglaterra).
+pais(europa, italia).
+pais(europa, paisDeGales).
+pais(europa, polonia).
+pais(europa, portugal).
+pais(europa, servia).
+pais(europa, suica).
+pais(europa, turquia).
+
+pais(oceania, australia).
