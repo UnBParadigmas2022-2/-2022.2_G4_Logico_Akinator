@@ -4,7 +4,7 @@
 :- use_module(library(lists)).
 :- use_module(library(random)).
 
-:- initialization(testeBase).
+:- initialization(base).
 
 :- dynamic pais/2.
 :- dynamic continente/1.
@@ -26,11 +26,23 @@ carregaArquivos :-
 	consult('v1/database/clubes.pl'),
 	consult('v1/database/jogadores.pl'),
 	consult('v1/database/perguntas.pl').
+
+printa_header:-
+	write("*---------------------------------------------------*"), nl,
+	write("|                                    .              |"), nl,
+	write("|      ,-. ,-. ,-. ,-. . , . ,-. ,-. |- ,-. ,-.     |"), nl,
+	write("|      |   | | | | ,-| |/  | | | ,-| |  | | |       |"), nl,
+	write("|      `-' `-' |-' `-^ |\\  ' ' ' `-^ `' `-' '       |"), nl,
+	write("|              |       ' `                          |"), nl,
+	write("|              '                                    |"), nl,
+	write("*---------------------------------------------------*"), nl, nl.
 				   
-testeBase :-
+base :-
 	% Carrega os arquivos da base, randomiza o tipo de pergunta e o jogador, por fim chama o "menu"
 	carregaArquivos,
 	carregaTool, 
+
+	printa_header,
 
 	write('Pense em um jogador e aperte s quando estiver pronto'), nl,
 	read(Resposta),
